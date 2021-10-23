@@ -1,0 +1,592 @@
+2021-10-15T15:15:38: Server listen at host http://localhost:3000/
+2021-10-15T15:15:38: connect to mongoDB
+2021-10-15T15:26:03: body {
+2021-10-15T15:26:03:   author: 'vochihieumoithaydoi',
+2021-10-15T15:26:03:   content: '',
+2021-10-15T15:26:03:   date_time: '15:26:3 5/10/2021',
+2021-10-15T15:26:03:   userID: '614791ac499f70eda22df399',
+2021-10-15T15:26:03:   channelID: '615d9a0a91466c0160dcfb4c',
+2021-10-15T15:26:03:   files: 'https://appchatbucket.s3.us-east-2.amazonaws.com/Nitro_Wallpaper_5000x2813.jpg-1634286352406.jpeg'
+2021-10-15T15:26:03: }
+2021-10-15T15:26:03: respone {
+2021-10-15T15:26:03:   userID: '614791ac499f70eda22df399',
+2021-10-15T15:26:03:   channelID: '615d9a0a91466c0160dcfb4c',
+2021-10-15T15:26:03:   author: 'vochihieumoithaydoi',
+2021-10-15T15:26:03:   date_time: '15:26:3 5/10/2021',
+2021-10-15T15:26:03:   content: '',
+2021-10-15T15:26:03:   files: 'https://appchatbucket.s3.us-east-2.amazonaws.com/Nitro_Wallpaper_5000x2813.jpg-1634286352406.jpeg',
+2021-10-15T15:26:03:   _id: new ObjectId("61693b1b54fe9b9ed802f6d1"),
+2021-10-15T15:26:03:   createdAt: 2021-10-15T08:26:03.514Z,
+2021-10-15T15:26:03:   updatedAt: 2021-10-15T08:26:03.514Z,
+2021-10-15T15:26:03:   __v: 0
+2021-10-15T15:26:03: }
+2021-10-15T15:39:27: Server listen at host http://localhost:3000/
+2021-10-15T15:39:27: connect to mongoDB
+2021-10-15T15:43:16: Server listen at host http://localhost:3000/
+2021-10-15T15:43:16: connect to mongoDB
+2021-10-15T15:44:28: Server listen at host http://localhost:3000/
+2021-10-15T15:44:28: connect to mongoDB
+2021-10-15T15:44:31: error MongoServerError: E11000 duplicate key error collection: AppChat.users index: name_1 dup key: { name: "vochihieu2" }
+2021-10-15T15:44:31:     at C:\Users\84929\Desktop\Nodejs\node_modules\mongodb\lib\operations\insert.js:51:33
+2021-10-15T15:44:31:     at C:\Users\84929\Desktop\Nodejs\node_modules\mongodb\lib\cmap\connection_pool.js:272:25
+2021-10-15T15:44:31:     at handleOperationResult (C:\Users\84929\Desktop\Nodejs\node_modules\mongodb\lib\sdam\server.js:363:9)
+2021-10-15T15:44:31:     at MessageStream.messageHandler (C:\Users\84929\Desktop\Nodejs\node_modules\mongodb\lib\cmap\connection.js:479:9)
+2021-10-15T15:44:31:     at MessageStream.emit (events.js:400:28)
+2021-10-15T15:44:31:     at MessageStream.emit (domain.js:470:12)
+2021-10-15T15:44:31:     at processIncomingData (C:\Users\84929\Desktop\Nodejs\node_modules\mongodb\lib\cmap\message_stream.js:108:16)
+2021-10-15T15:44:31:     at MessageStream._write (C:\Users\84929\Desktop\Nodejs\node_modules\mongodb\lib\cmap\message_stream.js:28:9)
+2021-10-15T15:44:31:     at writeOrBuffer (internal/streams/writable.js:358:12)
+2021-10-15T15:44:31:     at MessageStream.Writable.write (internal/streams/writable.js:303:10) {
+2021-10-15T15:44:31:   index: 0,
+2021-10-15T15:44:31:   code: 11000,
+2021-10-15T15:44:31:   keyPattern: { name: 1 },
+2021-10-15T15:44:31:   keyValue: { name: 'vochihieu2' }
+2021-10-15T15:44:31: }
+2021-10-15T15:45:29: Server listen at host http://localhost:3000/
+2021-10-15T15:45:29: connect to mongoDB
+2021-10-15T15:45:30: error MongoServerError: E11000 duplicate key error collection: AppChat.users index: name_1 dup key: { name: "vochihieu2" }
+2021-10-15T15:45:30:     at C:\Users\84929\Desktop\Nodejs\node_modules\mongodb\lib\operations\insert.js:51:33
+2021-10-15T15:45:30:     at C:\Users\84929\Desktop\Nodejs\node_modules\mongodb\lib\cmap\connection_pool.js:272:25
+2021-10-15T15:45:30:     at handleOperationResult (C:\Users\84929\Desktop\Nodejs\node_modules\mongodb\lib\sdam\server.js:363:9)
+2021-10-15T15:45:30:     at MessageStream.messageHandler (C:\Users\84929\Desktop\Nodejs\node_modules\mongodb\lib\cmap\connection.js:479:9)
+2021-10-15T15:45:30:     at MessageStream.emit (events.js:400:28)
+2021-10-15T15:45:30:     at MessageStream.emit (domain.js:470:12)
+2021-10-15T15:45:30:     at processIncomingData (C:\Users\84929\Desktop\Nodejs\node_modules\mongodb\lib\cmap\message_stream.js:108:16)
+2021-10-15T15:45:30:     at MessageStream._write (C:\Users\84929\Desktop\Nodejs\node_modules\mongodb\lib\cmap\message_stream.js:28:9)
+2021-10-15T15:45:30:     at writeOrBuffer (internal/streams/writable.js:358:12)
+2021-10-15T15:45:30:     at MessageStream.Writable.write (internal/streams/writable.js:303:10) {
+2021-10-15T15:45:30:   index: 0,
+2021-10-15T15:45:30:   code: 11000,
+2021-10-15T15:45:30:   keyPattern: { name: 1 },
+2021-10-15T15:45:30:   keyValue: { name: 'vochihieu2' }
+2021-10-15T15:45:30: }
+2021-10-15T15:47:39: Server listen at host http://localhost:3000/
+2021-10-15T15:47:39: connect to mongoDB
+2021-10-15T15:47:59: error MongoServerError: E11000 duplicate key error collection: AppChat.users index: name_1 dup key: { name: "vochihieu2" }
+2021-10-15T15:47:59:     at C:\Users\84929\Desktop\Nodejs\node_modules\mongodb\lib\operations\insert.js:51:33
+2021-10-15T15:47:59:     at C:\Users\84929\Desktop\Nodejs\node_modules\mongodb\lib\cmap\connection_pool.js:272:25
+2021-10-15T15:47:59:     at handleOperationResult (C:\Users\84929\Desktop\Nodejs\node_modules\mongodb\lib\sdam\server.js:363:9)
+2021-10-15T15:47:59:     at MessageStream.messageHandler (C:\Users\84929\Desktop\Nodejs\node_modules\mongodb\lib\cmap\connection.js:479:9)
+2021-10-15T15:47:59:     at MessageStream.emit (events.js:400:28)
+2021-10-15T15:47:59:     at MessageStream.emit (domain.js:470:12)
+2021-10-15T15:47:59:     at processIncomingData (C:\Users\84929\Desktop\Nodejs\node_modules\mongodb\lib\cmap\message_stream.js:108:16)
+2021-10-15T15:47:59:     at MessageStream._write (C:\Users\84929\Desktop\Nodejs\node_modules\mongodb\lib\cmap\message_stream.js:28:9)
+2021-10-15T15:47:59:     at writeOrBuffer (internal/streams/writable.js:358:12)
+2021-10-15T15:47:59:     at MessageStream.Writable.write (internal/streams/writable.js:303:10) {
+2021-10-15T15:47:59:   index: 0,
+2021-10-15T15:47:59:   code: 11000,
+2021-10-15T15:47:59:   keyPattern: { name: 1 },
+2021-10-15T15:47:59:   keyValue: { name: 'vochihieu2' }
+2021-10-15T15:47:59: }
+2021-10-15T15:48:55: Server listen at host http://localhost:3000/
+2021-10-15T15:48:55: connect to mongoDB
+2021-10-15T15:49:07: error MongoServerError: E11000 duplicate key error collection: AppChat.users index: name_1 dup key: { name: "vochihieu22" }
+2021-10-15T15:49:07:     at C:\Users\84929\Desktop\Nodejs\node_modules\mongodb\lib\operations\insert.js:51:33
+2021-10-15T15:49:07:     at C:\Users\84929\Desktop\Nodejs\node_modules\mongodb\lib\cmap\connection_pool.js:272:25
+2021-10-15T15:49:07:     at handleOperationResult (C:\Users\84929\Desktop\Nodejs\node_modules\mongodb\lib\sdam\server.js:363:9)
+2021-10-15T15:49:07:     at MessageStream.messageHandler (C:\Users\84929\Desktop\Nodejs\node_modules\mongodb\lib\cmap\connection.js:479:9)
+2021-10-15T15:49:07:     at MessageStream.emit (events.js:400:28)
+2021-10-15T15:49:07:     at MessageStream.emit (domain.js:470:12)
+2021-10-15T15:49:07:     at processIncomingData (C:\Users\84929\Desktop\Nodejs\node_modules\mongodb\lib\cmap\message_stream.js:108:16)
+2021-10-15T15:49:07:     at MessageStream._write (C:\Users\84929\Desktop\Nodejs\node_modules\mongodb\lib\cmap\message_stream.js:28:9)
+2021-10-15T15:49:07:     at writeOrBuffer (internal/streams/writable.js:358:12)
+2021-10-15T15:49:07:     at MessageStream.Writable.write (internal/streams/writable.js:303:10) {
+2021-10-15T15:49:07:   index: 0,
+2021-10-15T15:49:07:   code: 11000,
+2021-10-15T15:49:07:   keyPattern: { name: 1 },
+2021-10-15T15:49:07:   keyValue: { name: 'vochihieu22' }
+2021-10-15T15:49:07: }
+2021-10-15T15:53:46: error MongoServerError: E11000 duplicate key error collection: AppChat.users index: name_1 dup key: { name: "vochihieu" }
+2021-10-15T15:53:46:     at C:\Users\84929\Desktop\Nodejs\node_modules\mongodb\lib\operations\insert.js:51:33
+2021-10-15T15:53:46:     at C:\Users\84929\Desktop\Nodejs\node_modules\mongodb\lib\cmap\connection_pool.js:272:25
+2021-10-15T15:53:46:     at handleOperationResult (C:\Users\84929\Desktop\Nodejs\node_modules\mongodb\lib\sdam\server.js:363:9)
+2021-10-15T15:53:46:     at MessageStream.messageHandler (C:\Users\84929\Desktop\Nodejs\node_modules\mongodb\lib\cmap\connection.js:479:9)
+2021-10-15T15:53:46:     at MessageStream.emit (events.js:400:28)
+2021-10-15T15:53:46:     at MessageStream.emit (domain.js:470:12)
+2021-10-15T15:53:46:     at processIncomingData (C:\Users\84929\Desktop\Nodejs\node_modules\mongodb\lib\cmap\message_stream.js:108:16)
+2021-10-15T15:53:46:     at MessageStream._write (C:\Users\84929\Desktop\Nodejs\node_modules\mongodb\lib\cmap\message_stream.js:28:9)
+2021-10-15T15:53:46:     at writeOrBuffer (internal/streams/writable.js:358:12)
+2021-10-15T15:53:46:     at MessageStream.Writable.write (internal/streams/writable.js:303:10) {
+2021-10-15T15:53:46:   index: 0,
+2021-10-15T15:53:46:   code: 11000,
+2021-10-15T15:53:46:   keyPattern: { name: 1 },
+2021-10-15T15:53:46:   keyValue: { name: 'vochihieu' }
+2021-10-15T15:53:46: }
+2021-10-15T20:19:56: Server listen at host http://localhost:3000/
+2021-10-15T20:19:56: connect to mongoDB
+2021-10-15T20:25:55: Server listen at host http://localhost:3000/
+2021-10-15T20:25:55: connect to mongoDB
+2021-10-15T20:26:46: user online [
+2021-10-15T20:26:46:   message {
+2021-10-15T20:26:46:     username: 'vochihieumoithaydoi',
+2021-10-15T20:26:46:     channelID: '615d9a0a91466c0160dcfb4c'
+2021-10-15T20:26:46:   }
+2021-10-15T20:26:46: ]
+2021-10-15T20:28:27: user online [
+2021-10-15T20:28:27:   message {
+2021-10-15T20:28:27:     username: 'vochihieumoithaydoi',
+2021-10-15T20:28:27:     channelID: '616942b719743db139736707'
+2021-10-15T20:28:27:   }
+2021-10-15T20:28:27: ]
+2021-10-15T20:28:27: user online [
+2021-10-15T20:28:27:   message {
+2021-10-15T20:28:27:     username: 'vochihieumoithaydoi',
+2021-10-15T20:28:27:     channelID: '615d9a0a91466c0160dcfb4c'
+2021-10-15T20:28:27:   }
+2021-10-15T20:28:27: ]
+2021-10-15T20:29:09: user online [
+2021-10-15T20:29:09:   message {
+2021-10-15T20:29:09:     username: 'vochihieumoithaydoi',
+2021-10-15T20:29:09:     channelID: '616942b719743db139736707'
+2021-10-15T20:29:09:   }
+2021-10-15T20:29:09: ]
+2021-10-15T20:29:09: user online [
+2021-10-15T20:29:09:   message {
+2021-10-15T20:29:09:     username: 'vochihieumoithaydoi',
+2021-10-15T20:29:09:     channelID: '615d9a0a91466c0160dcfb4c'
+2021-10-15T20:29:09:   }
+2021-10-15T20:29:09: ]
+2021-10-15T20:29:34: Server listen at host http://localhost:3000/
+2021-10-15T20:29:34: connect to mongoDB
+2021-10-15T20:29:35: user online [
+2021-10-15T20:29:35:   message {
+2021-10-15T20:29:35:     username: 'vochihieumoithaydoi',
+2021-10-15T20:29:35:     channelID: '615d9a0a91466c0160dcfb4c'
+2021-10-15T20:29:35:   }
+2021-10-15T20:29:35: ]
+2021-10-15T20:31:23: Server listen at host http://localhost:3000/
+2021-10-15T20:31:23: connect to mongoDB
+2021-10-15T20:31:52: Server listen at host http://localhost:3000/
+2021-10-15T20:31:52: connect to mongoDB
+2021-10-15T21:47:10: Server listen at host http://localhost:3000/
+2021-10-15T21:47:10: connect to mongoDB
+2021-10-15T21:47:54: Server listen at host http://localhost:3000/
+2021-10-15T21:47:54: connect to mongoDB
+2021-10-15T21:48:20: Server listen at host http://localhost:3000/
+2021-10-15T21:48:20: connect to mongoDB
+2021-10-15T21:56:04: Server listen at host http://localhost:3000/
+2021-10-15T21:56:04: connect to mongoDB
+2021-10-15T21:56:54: im join room
+2021-10-15T21:56:54: im add user
+2021-10-15T21:58:09: im join room
+2021-10-15T21:58:09: im add user
+2021-10-15T21:58:09: im join room
+2021-10-15T21:58:09: im add user
+2021-10-15T21:58:30: im join room
+2021-10-15T21:58:30: im add user
+2021-10-15T21:58:30: im join room
+2021-10-15T21:58:30: im add user
+2021-10-15T21:58:43: im join room
+2021-10-15T21:58:43: im add user
+2021-10-15T21:58:43: im join room
+2021-10-15T21:58:43: im add user
+2021-10-15T22:00:05: Server listen at host http://localhost:3000/
+2021-10-15T22:00:05: connect to mongoDB
+2021-10-15T22:01:27: Server listen at host http://localhost:3000/
+2021-10-15T22:01:27: connect to mongoDB
+2021-10-15T22:01:50: channeID 616942b719743db139736707
+2021-10-15T22:01:52: channeID 615d9a0a91466c0160dcfb4c
+2021-10-15T22:05:13: Server listen at host http://localhost:3000/
+2021-10-15T22:05:13: connect to mongoDB
+2021-10-15T22:21:43: Server listen at host http://localhost:3000/
+2021-10-15T22:21:43: connect to mongoDB
+2021-10-15T23:07:31: Server listen at host http://localhost:3000/
+2021-10-15T23:07:31: connect to mongoDB
+2021-10-15T23:10:26: Server listen at host http://localhost:3000/
+2021-10-15T23:10:26: connect to mongoDB
+2021-10-16T00:17:04: Server listen at host http://localhost:3000/
+2021-10-16T00:17:04: connect to mongoDB
+2021-10-16T00:32:05: Server listen at host http://localhost:3000/
+2021-10-16T00:32:05: connect to mongoDB
+2021-10-16T00:42:56: Server listen at host http://localhost:3000/
+2021-10-16T00:42:56: connect to mongoDB
+2021-10-17T21:59:05: Server listen at host http://localhost:3000/
+2021-10-17T21:59:06: connect to mongoDB
+2021-10-17T22:17:26: Server listen at host http://localhost:3000/
+2021-10-17T22:17:26: connect to mongoDB
+2021-10-18T18:45:04: Server listen at host http://localhost:3000/
+2021-10-18T18:45:04: connect to mongoDB
+2021-10-18T21:28:22: error Error: User validation failed: name: Path `name` (`moitao2`) is shorter than the minimum allowed length (8).
+2021-10-18T21:28:22:     at ValidationError.inspect (C:\Users\84929\Desktop\Nodejs\node_modules\mongoose\lib\error\validation.js:48:26)
+2021-10-18T21:28:22:     at formatValue (internal/util/inspect.js:743:19)
+2021-10-18T21:28:22:     at inspect (internal/util/inspect.js:317:10)
+2021-10-18T21:28:22:     at formatWithOptionsInternal (internal/util/inspect.js:1976:40)
+2021-10-18T21:28:22:     at formatWithOptions (internal/util/inspect.js:1858:10)
+2021-10-18T21:28:22:     at console.value (internal/console/constructor.js:323:14)
+2021-10-18T21:28:22:     at console.log (internal/console/constructor.js:358:61)
+2021-10-18T21:28:22:     at C:\Users\84929\Desktop\Nodejs\dist\controller\user.controller.js:30:25
+2021-10-18T21:28:22:     at Generator.throw (<anonymous>)
+2021-10-18T21:28:22:     at rejected (C:\Users\84929\Desktop\Nodejs\dist\controller\user.controller.js:6:65) {
+2021-10-18T21:28:22:   errors: {
+2021-10-18T21:28:22:     name: ValidatorError: Path `name` (`moitao2`) is shorter than the minimum allowed length (8).
+2021-10-18T21:28:22:         at validate (C:\Users\84929\Desktop\Nodejs\node_modules\mongoose\lib\schematype.js:1264:13)
+2021-10-18T21:28:22:         at C:\Users\84929\Desktop\Nodejs\node_modules\mongoose\lib\schematype.js:1247:7
+2021-10-18T21:28:22:         at Array.forEach (<anonymous>)
+2021-10-18T21:28:22:         at SchemaString.SchemaType.doValidate (C:\Users\84929\Desktop\Nodejs\node_modules\mongoose\lib\schematype.js:1197:14)
+2021-10-18T21:28:22:         at C:\Users\84929\Desktop\Nodejs\node_modules\mongoose\lib\document.js:2662:18
+2021-10-18T21:28:22:         at processTicksAndRejections (internal/process/task_queues.js:77:11) {
+2021-10-18T21:28:22:       properties: [Object],
+2021-10-18T21:28:22:       kind: 'minlength',
+2021-10-18T21:28:22:       path: 'name',
+2021-10-18T21:28:22:       value: 'moitao2',
+2021-10-18T21:28:22:       reason: undefined,
+2021-10-18T21:28:22:       [Symbol(mongoose:validatorError)]: true
+2021-10-18T21:28:22:     }
+2021-10-18T21:28:22:   },
+2021-10-18T21:28:22:   _message: 'User validation failed'
+2021-10-18T21:28:22: }
+2021-10-18T21:41:32: Server listen at host http://localhost:3000/
+2021-10-18T21:41:32: connect to mongoDB
+2021-10-18T23:38:32: error MongoServerError: E11000 duplicate key error collection: AppChat.users index: name_1 dup key: { name: "moitaohomnay4" }
+2021-10-18T23:38:32:     at C:\Users\84929\Desktop\Nodejs\node_modules\mongodb\lib\operations\insert.js:51:33
+2021-10-18T23:38:32:     at C:\Users\84929\Desktop\Nodejs\node_modules\mongodb\lib\cmap\connection_pool.js:272:25
+2021-10-18T23:38:32:     at handleOperationResult (C:\Users\84929\Desktop\Nodejs\node_modules\mongodb\lib\sdam\server.js:363:9)
+2021-10-18T23:38:32:     at MessageStream.messageHandler (C:\Users\84929\Desktop\Nodejs\node_modules\mongodb\lib\cmap\connection.js:479:9)
+2021-10-18T23:38:32:     at MessageStream.emit (events.js:400:28)
+2021-10-18T23:38:32:     at MessageStream.emit (domain.js:470:12)
+2021-10-18T23:38:32:     at processIncomingData (C:\Users\84929\Desktop\Nodejs\node_modules\mongodb\lib\cmap\message_stream.js:108:16)
+2021-10-18T23:38:32:     at MessageStream._write (C:\Users\84929\Desktop\Nodejs\node_modules\mongodb\lib\cmap\message_stream.js:28:9)
+2021-10-18T23:38:32:     at writeOrBuffer (internal/streams/writable.js:358:12)
+2021-10-18T23:38:32:     at MessageStream.Writable.write (internal/streams/writable.js:303:10) {
+2021-10-18T23:38:32:   index: 0,
+2021-10-18T23:38:32:   code: 11000,
+2021-10-18T23:38:32:   keyPattern: { name: 1 },
+2021-10-18T23:38:32:   keyValue: { name: 'moitaohomnay4' }
+2021-10-18T23:38:32: }
+2021-10-19T00:19:09: Server listen at host http://localhost:3000/
+2021-10-19T00:19:09: connect to mongoDB
+2021-10-19T00:20:56: Server listen at host http://localhost:3000/
+2021-10-19T00:20:56: connect to mongoDB
+2021-10-19T00:24:05: Server listen at host http://localhost:3000/
+2021-10-19T00:24:05: connect to mongoDB
+2021-10-19T00:25:28: Server listen at host http://localhost:3000/
+2021-10-19T00:25:28: connect to mongoDB
+2021-10-19T00:26:24: Server listen at host http://localhost:3000/
+2021-10-19T00:26:24: connect to mongoDB
+2021-10-19T00:30:32: Server listen at host http://localhost:3000/
+2021-10-19T00:30:32: connect to mongoDB
+2021-10-19T00:31:38: Server listen at host http://localhost:3000/
+2021-10-19T00:31:38: connect to mongoDB
+2021-10-19T00:37:02: Server listen at host http://localhost:3000/
+2021-10-19T00:37:02: connect to mongoDB
+2021-10-19T00:44:57: Server listen at host http://localhost:3000/
+2021-10-19T00:44:57: connect to mongoDB
+2021-10-19T00:46:36: Server listen at host http://localhost:3000/
+2021-10-19T00:46:36: connect to mongoDB
+2021-10-19T11:13:21: Server listen at host http://localhost:3000/
+2021-10-19T11:13:21: connect to mongoDB
+2021-10-19T12:42:04: Server listen at host http://localhost:3000/
+2021-10-19T12:42:04: connect to mongoDB
+2021-10-19T12:42:07: response null
+2021-10-19T12:42:46: Server listen at host http://localhost:3000/
+2021-10-19T12:42:46: connect to mongoDB
+2021-10-19T12:42:50: channnel id 615d9a3891466c0160dcfb57
+2021-10-19T12:42:50: body { name: 'lêuueueue' }
+2021-10-19T12:42:50: response null
+2021-10-19T12:43:43: channnel id 615d9a3891466c0160dcfb57
+2021-10-19T12:43:43: body { name: 'vochiheiu2' }
+2021-10-19T12:43:43: response null
+2021-10-19T12:44:00: channnel id 615d9a3891466c0160dcfb57
+2021-10-19T12:44:00: body { name: 'vochiheiu2' }
+2021-10-19T12:44:00: response null
+2021-10-19T12:44:32: channnel id 615d99ff91466c0160dcfb49
+2021-10-19T12:44:32: body { name: 'jjjjjjjjjjjjjj' }
+2021-10-19T12:44:32: response null
+2021-10-19T12:49:05: channnel id 615d9a3891466c0160dcfb54
+2021-10-19T12:49:05: body { name: 'vochiheiu moi tao' }
+2021-10-19T12:49:05: response {
+2021-10-19T12:49:05:   _id: new ObjectId("615d9a3891466c0160dcfb54"),
+2021-10-19T12:49:05:   name: 'vochiheiu',
+2021-10-19T12:49:05:   owner: '2614791ac499f70eda22df399',
+2021-10-19T12:49:05:   createdAt: 2021-10-06T12:44:40.880Z,
+2021-10-19T12:49:05:   updatedAt: 2021-10-19T05:38:32.798Z,
+2021-10-19T12:49:05:   __v: 0
+2021-10-19T12:49:05: }
+2021-10-19T12:51:08: Server listen at host http://localhost:3000/
+2021-10-19T12:51:08: connect to mongoDB
+2021-10-19T12:52:45: Server listen at host http://localhost:3000/
+2021-10-19T12:52:45: connect to mongoDB
+2021-10-19T13:14:35: Server listen at host http://localhost:3000/
+2021-10-19T13:14:35: connect to mongoDB
+2021-10-19T13:34:52: Server listen at host http://localhost:3000/
+2021-10-19T13:34:52: connect to mongoDB
+2021-10-19T13:42:58: Server listen at host http://localhost:3000/
+2021-10-19T13:42:58: connect to mongoDB
+2021-10-19T13:51:03: body {
+2021-10-19T13:51:03:   author: 'vochihieumoitao2',
+2021-10-19T13:51:03:   content: 'hello from the other side',
+2021-10-19T13:51:03:   date_time: '13:51:3 2/10/2021',
+2021-10-19T13:51:03:   userID: '616d7f3da75676ea15045de5',
+2021-10-19T13:51:03:   channelID: '616e6a4d295d5d1f9d2d78f3'
+2021-10-19T13:51:03: }
+2021-10-19T13:51:03: respone {
+2021-10-19T13:51:03:   userID: '616d7f3da75676ea15045de5',
+2021-10-19T13:51:03:   channelID: '616e6a4d295d5d1f9d2d78f3',
+2021-10-19T13:51:03:   author: 'vochihieumoitao2',
+2021-10-19T13:51:03:   date_time: '13:51:3 2/10/2021',
+2021-10-19T13:51:03:   content: 'hello from the other side',
+2021-10-19T13:51:03:   _id: new ObjectId("616e6ad7295d5d1f9d2d7915"),
+2021-10-19T13:51:03:   createdAt: 2021-10-19T06:51:03.412Z,
+2021-10-19T13:51:03:   updatedAt: 2021-10-19T06:51:03.412Z,
+2021-10-19T13:51:03:   __v: 0
+2021-10-19T13:51:03: }
+2021-10-19T13:51:16: body {
+2021-10-19T13:51:16:   author: 'vochihieumoithaydoi',
+2021-10-19T13:51:16:   content: 'reply the other side',
+2021-10-19T13:51:16:   date_time: '13:51:16 2/10/2021',
+2021-10-19T13:51:16:   userID: '614791ac499f70eda22df399',
+2021-10-19T13:51:16:   channelID: '616e6a4d295d5d1f9d2d78f3'
+2021-10-19T13:51:16: }
+2021-10-19T13:51:16: respone {
+2021-10-19T13:51:16:   userID: '614791ac499f70eda22df399',
+2021-10-19T13:51:16:   channelID: '616e6a4d295d5d1f9d2d78f3',
+2021-10-19T13:51:16:   author: 'vochihieumoithaydoi',
+2021-10-19T13:51:16:   date_time: '13:51:16 2/10/2021',
+2021-10-19T13:51:16:   content: 'reply the other side',
+2021-10-19T13:51:16:   _id: new ObjectId("616e6ae4295d5d1f9d2d7917"),
+2021-10-19T13:51:16:   createdAt: 2021-10-19T06:51:16.259Z,
+2021-10-19T13:51:16:   updatedAt: 2021-10-19T06:51:16.259Z,
+2021-10-19T13:51:16:   __v: 0
+2021-10-19T13:51:16: }
+2021-10-19T13:54:00: body {
+2021-10-19T13:54:00:   author: 'vochihieumoitao2',
+2021-10-19T13:54:00:   content: '',
+2021-10-19T13:54:00:   date_time: '13:54:0 2/10/2021',
+2021-10-19T13:54:00:   userID: '616d7f3da75676ea15045de5',
+2021-10-19T13:54:00:   channelID: '616e6a4d295d5d1f9d2d78f3',
+2021-10-19T13:54:00:   files: 'https://appchatbucket.s3.us-east-2.amazonaws.com/Planet9_Wallpaper_5000x2813.jpg-1634626428696.jpeg'
+2021-10-19T13:54:00: }
+2021-10-19T13:54:00: respone {
+2021-10-19T13:54:00:   userID: '616d7f3da75676ea15045de5',
+2021-10-19T13:54:00:   channelID: '616e6a4d295d5d1f9d2d78f3',
+2021-10-19T13:54:00:   author: 'vochihieumoitao2',
+2021-10-19T13:54:00:   date_time: '13:54:0 2/10/2021',
+2021-10-19T13:54:00:   content: '',
+2021-10-19T13:54:00:   files: 'https://appchatbucket.s3.us-east-2.amazonaws.com/Planet9_Wallpaper_5000x2813.jpg-1634626428696.jpeg',
+2021-10-19T13:54:00:   _id: new ObjectId("616e6b88295d5d1f9d2d7919"),
+2021-10-19T13:54:00:   createdAt: 2021-10-19T06:54:00.816Z,
+2021-10-19T13:54:00:   updatedAt: 2021-10-19T06:54:00.816Z,
+2021-10-19T13:54:00:   __v: 0
+2021-10-19T13:54:00: }
+2021-10-19T15:03:07: Server listen at host http://localhost:3000/
+2021-10-19T15:03:07: connect to mongoDB
+2021-10-19T15:28:16: Server listen at host http://localhost:3000/
+2021-10-19T15:28:16: connect to mongoDB
+2021-10-19T15:34:00: Server listen at host http://localhost:3000/
+2021-10-19T15:34:00: connect to mongoDB
+2021-10-19T18:56:16: Server listen at host http://localhost:3000/
+2021-10-19T18:56:16: connect to mongoDB
+2021-10-19T20:39:01: Server listen at host http://localhost:3000/
+2021-10-19T20:39:01: connect to mongoDB
+2021-10-19T20:51:12: error Error: User validation failed: name: Path `name` (`hello1`) is shorter than the minimum allowed length (8).
+2021-10-19T20:51:12:     at ValidationError.inspect (C:\Users\84929\Desktop\Nodejs\node_modules\mongoose\lib\error\validation.js:48:26)
+2021-10-19T20:51:12:     at formatValue (internal/util/inspect.js:743:19)
+2021-10-19T20:51:12:     at inspect (internal/util/inspect.js:317:10)
+2021-10-19T20:51:12:     at formatWithOptionsInternal (internal/util/inspect.js:1976:40)
+2021-10-19T20:51:12:     at formatWithOptions (internal/util/inspect.js:1858:10)
+2021-10-19T20:51:12:     at console.value (internal/console/constructor.js:323:14)
+2021-10-19T20:51:12:     at console.log (internal/console/constructor.js:358:61)
+2021-10-19T20:51:12:     at C:\Users\84929\Desktop\Nodejs\dist\controller\user.controller.js:30:25
+2021-10-19T20:51:12:     at Generator.throw (<anonymous>)
+2021-10-19T20:51:12:     at rejected (C:\Users\84929\Desktop\Nodejs\dist\controller\user.controller.js:6:65) {
+2021-10-19T20:51:12:   errors: {
+2021-10-19T20:51:12:     name: ValidatorError: Path `name` (`hello1`) is shorter than the minimum allowed length (8).
+2021-10-19T20:51:12:         at validate (C:\Users\84929\Desktop\Nodejs\node_modules\mongoose\lib\schematype.js:1264:13)
+2021-10-19T20:51:12:         at C:\Users\84929\Desktop\Nodejs\node_modules\mongoose\lib\schematype.js:1247:7
+2021-10-19T20:51:12:         at Array.forEach (<anonymous>)
+2021-10-19T20:51:12:         at SchemaString.SchemaType.doValidate (C:\Users\84929\Desktop\Nodejs\node_modules\mongoose\lib\schematype.js:1197:14)
+2021-10-19T20:51:12:         at C:\Users\84929\Desktop\Nodejs\node_modules\mongoose\lib\document.js:2662:18
+2021-10-19T20:51:12:         at processTicksAndRejections (internal/process/task_queues.js:77:11) {
+2021-10-19T20:51:12:       properties: [Object],
+2021-10-19T20:51:12:       kind: 'minlength',
+2021-10-19T20:51:12:       path: 'name',
+2021-10-19T20:51:12:       value: 'hello1',
+2021-10-19T20:51:12:       reason: undefined,
+2021-10-19T20:51:12:       [Symbol(mongoose:validatorError)]: true
+2021-10-19T20:51:12:     }
+2021-10-19T20:51:12:   },
+2021-10-19T20:51:12:   _message: 'User validation failed'
+2021-10-19T20:51:12: }
+2021-10-19T20:52:50: Server listen at host http://localhost:3000/
+2021-10-19T20:52:50: connect to mongoDB
+2021-10-19T21:04:22: Server listen at host http://localhost:3000/
+2021-10-19T21:04:22: connect to mongoDB
+2021-10-19T21:08:17: user online [
+2021-10-19T21:08:17:   message {
+2021-10-19T21:08:17:     username: 'vochihieumoithaydoi',
+2021-10-19T21:08:17:     channelID: '615d9a0a91466c0160dcfb4c'
+2021-10-19T21:08:17:   }
+2021-10-19T21:08:17: ]
+2021-10-19T21:08:25: user online [
+2021-10-19T21:08:25:   message {
+2021-10-19T21:08:25:     username: 'vochihieumoithaydoi',
+2021-10-19T21:08:25:     channelID: '615d9a0a91466c0160dcfb4c'
+2021-10-19T21:08:25:   },
+2021-10-19T21:08:25:   message { username: 'hello1', channelID: '615d9a0a91466c0160dcfb4c' }
+2021-10-19T21:08:25: ]
+2021-10-19T21:10:25: Server listen at host http://localhost:3000/
+2021-10-19T21:10:25: connect to mongoDB
+2021-10-19T21:10:46: user online [
+2021-10-19T21:10:46:   message { username: 'hello1', channelID: '615d9a0a91466c0160dcfb4c' }
+2021-10-19T21:10:46: ]
+2021-10-19T21:10:53: user online [
+2021-10-19T21:10:53:   message { username: 'hello1', channelID: '615d9a0a91466c0160dcfb4c' },
+2021-10-19T21:10:53:   message {
+2021-10-19T21:10:53:     username: 'vochihieumoithaydoi',
+2021-10-19T21:10:53:     channelID: '615d9a0a91466c0160dcfb4c'
+2021-10-19T21:10:53:   }
+2021-10-19T21:10:53: ]
+2021-10-19T21:12:00: user online [
+2021-10-19T21:12:00:   message { username: 'hello1', channelID: '615d9a0a91466c0160dcfb4c' },
+2021-10-19T21:12:00:   message {
+2021-10-19T21:12:00:     username: 'vochihieumoithaydoi',
+2021-10-19T21:12:00:     channelID: '615d9a0a91466c0160dcfb4c'
+2021-10-19T21:12:00:   }
+2021-10-19T21:12:00: ]
+2021-10-19T21:12:07: user online [
+2021-10-19T21:12:07:   message { username: 'hello1', channelID: '615d9a0a91466c0160dcfb4c' },
+2021-10-19T21:12:07:   message {
+2021-10-19T21:12:07:     username: 'vochihieumoithaydoi',
+2021-10-19T21:12:07:     channelID: '615d9a0a91466c0160dcfb4c'
+2021-10-19T21:12:07:   }
+2021-10-19T21:12:07: ]
+2021-10-19T21:12:43: user online [
+2021-10-19T21:12:43:   message { username: 'hello1', channelID: '615d9a0a91466c0160dcfb4c' },
+2021-10-19T21:12:43:   message {
+2021-10-19T21:12:43:     username: 'vochihieumoithaydoi',
+2021-10-19T21:12:43:     channelID: '615d9a0a91466c0160dcfb4c'
+2021-10-19T21:12:43:   }
+2021-10-19T21:12:43: ]
+2021-10-19T21:12:52: user online [
+2021-10-19T21:12:52:   message { username: 'hello1', channelID: '615d9a0a91466c0160dcfb4c' },
+2021-10-19T21:12:52:   message {
+2021-10-19T21:12:52:     username: 'vochihieumoithaydoi',
+2021-10-19T21:12:52:     channelID: '615d9a0a91466c0160dcfb4c'
+2021-10-19T21:12:52:   }
+2021-10-19T21:12:52: ]
+2021-10-19T21:23:36: TypeError: callback is not a function
+2021-10-19T21:23:36:     at C:\Users\84929\Desktop\Nodejs\dist\app.js:74:13
+2021-10-19T21:23:36:     at Generator.next (<anonymous>)
+2021-10-19T21:23:36:     at fulfilled (C:\Users\84929\Desktop\Nodejs\dist\app.js:5:58)
+2021-10-19T21:23:36:     at processTicksAndRejections (internal/process/task_queues.js:95:5)
+2021-10-19T21:23:37: TypeError: callback is not a function
+2021-10-19T21:23:37:     at C:\Users\84929\Desktop\Nodejs\dist\app.js:74:13
+2021-10-19T21:23:37:     at Generator.next (<anonymous>)
+2021-10-19T21:23:37:     at fulfilled (C:\Users\84929\Desktop\Nodejs\dist\app.js:5:58)
+2021-10-19T21:23:37:     at processTicksAndRejections (internal/process/task_queues.js:95:5)
+2021-10-19T21:23:57: Server listen at host http://localhost:3000/
+2021-10-19T21:23:57: connect to mongoDB
+2021-10-19T21:30:38: Server listen at host http://localhost:3000/
+2021-10-19T21:30:38: connect to mongoDB
+2021-10-19T21:38:44: Server listen at host http://localhost:3000/
+2021-10-19T21:38:44: connect to mongoDB
+2021-10-19T21:52:15: Server listen at host http://localhost:3000/
+2021-10-19T21:52:15: connect to mongoDB
+2021-10-19T21:54:08: Server listen at host http://localhost:3000/
+2021-10-19T21:54:08: connect to mongoDB
+2021-10-19T22:04:10: Server listen at host http://localhost:3000/
+2021-10-19T22:04:10: connect to mongoDB
+2021-10-19T22:05:20: Server listen at host http://localhost:3000/
+2021-10-19T22:05:20: connect to mongoDB
+2021-10-19T22:05:20: user has connected
+2021-10-19T22:05:22: user has connected
+2021-10-19T22:10:10: user has connected
+2021-10-19T22:10:10: user left
+2021-10-19T22:12:17: user has connected
+2021-10-19T22:13:46: user has connected
+2021-10-19T22:16:14: user has connected
+2021-10-19T22:21:38: Server listen at host http://localhost:3000/
+2021-10-19T22:21:38: connect to mongoDB
+2021-10-19T22:21:38: user has connected
+2021-10-19T22:23:15: user has connected
+2021-10-19T22:23:30: user has connected
+2021-10-19T22:23:54: user has connected
+2021-10-19T22:24:21: user has connected
+2021-10-19T22:27:29: Server listen at host http://localhost:3000/
+2021-10-19T22:27:29: connect to mongoDB
+2021-10-19T22:27:29: user has connected
+2021-10-19T22:27:29: user has connected
+2021-10-19T22:28:12: Server listen at host http://localhost:3000/
+2021-10-19T22:28:12: connect to mongoDB
+2021-10-19T22:28:12: user has connected
+2021-10-19T22:28:12: user has connected
+2021-10-19T22:28:33: user has connected
+2021-10-19T22:28:34: user has connected
+2021-10-19T22:30:10: user has connected
+2021-10-19T23:24:17: user has connected
+2021-10-19T23:24:39: user has connected
+2021-10-19T23:30:50: user has connected
+2021-10-22T10:33:15: Server listen at host http://localhost:3000/
+2021-10-22T10:33:15: connect to mongoDB
+2021-10-23T21:10:26: Server listen at host http://localhost:3000/
+2021-10-23T21:10:26: connect to mongoDB
+2021-10-23T21:15:03: Server listen at host http://localhost:3000/
+2021-10-23T21:15:03: connect to mongoDB
+2021-10-23T21:15:07: user has connected
+2021-10-23T21:16:50: user has connected
+2021-10-23T21:18:47: error MongoServerError: E11000 duplicate key error collection: AppChat.users index: name_1 dup key: { name: "vochihieu" }
+2021-10-23T21:18:47:     at C:\Users\84929\Desktop\Nodejs\node_modules\mongodb\lib\operations\insert.js:51:33
+2021-10-23T21:18:47:     at C:\Users\84929\Desktop\Nodejs\node_modules\mongodb\lib\cmap\connection_pool.js:272:25
+2021-10-23T21:18:47:     at handleOperationResult (C:\Users\84929\Desktop\Nodejs\node_modules\mongodb\lib\sdam\server.js:363:9)
+2021-10-23T21:18:47:     at MessageStream.messageHandler (C:\Users\84929\Desktop\Nodejs\node_modules\mongodb\lib\cmap\connection.js:479:9)
+2021-10-23T21:18:47:     at MessageStream.emit (events.js:400:28)
+2021-10-23T21:18:47:     at MessageStream.emit (domain.js:470:12)
+2021-10-23T21:18:47:     at processIncomingData (C:\Users\84929\Desktop\Nodejs\node_modules\mongodb\lib\cmap\message_stream.js:108:16)
+2021-10-23T21:18:47:     at MessageStream._write (C:\Users\84929\Desktop\Nodejs\node_modules\mongodb\lib\cmap\message_stream.js:28:9)
+2021-10-23T21:18:47:     at writeOrBuffer (internal/streams/writable.js:358:12)
+2021-10-23T21:18:47:     at MessageStream.Writable.write (internal/streams/writable.js:303:10) {
+2021-10-23T21:18:47:   index: 0,
+2021-10-23T21:18:47:   code: 11000,
+2021-10-23T21:18:47:   keyPattern: { name: 1 },
+2021-10-23T21:18:47:   keyValue: { name: 'vochihieu' }
+2021-10-23T21:18:47: }
+2021-10-23T21:18:53: error MongoServerError: E11000 duplicate key error collection: AppChat.users index: name_1 dup key: { name: "vochihieu" }
+2021-10-23T21:18:53:     at C:\Users\84929\Desktop\Nodejs\node_modules\mongodb\lib\operations\insert.js:51:33
+2021-10-23T21:18:53:     at C:\Users\84929\Desktop\Nodejs\node_modules\mongodb\lib\cmap\connection_pool.js:272:25
+2021-10-23T21:18:53:     at handleOperationResult (C:\Users\84929\Desktop\Nodejs\node_modules\mongodb\lib\sdam\server.js:363:9)
+2021-10-23T21:18:53:     at MessageStream.messageHandler (C:\Users\84929\Desktop\Nodejs\node_modules\mongodb\lib\cmap\connection.js:479:9)
+2021-10-23T21:18:53:     at MessageStream.emit (events.js:400:28)
+2021-10-23T21:18:53:     at MessageStream.emit (domain.js:470:12)
+2021-10-23T21:18:53:     at processIncomingData (C:\Users\84929\Desktop\Nodejs\node_modules\mongodb\lib\cmap\message_stream.js:108:16)
+2021-10-23T21:18:53:     at MessageStream._write (C:\Users\84929\Desktop\Nodejs\node_modules\mongodb\lib\cmap\message_stream.js:28:9)
+2021-10-23T21:18:53:     at writeOrBuffer (internal/streams/writable.js:358:12)
+2021-10-23T21:18:53:     at MessageStream.Writable.write (internal/streams/writable.js:303:10) {
+2021-10-23T21:18:53:   index: 0,
+2021-10-23T21:18:53:   code: 11000,
+2021-10-23T21:18:53:   keyPattern: { name: 1 },
+2021-10-23T21:18:53:   keyValue: { name: 'vochihieu' }
+2021-10-23T21:18:53: }
+2021-10-23T21:19:11: error MongoServerError: E11000 duplicate key error collection: AppChat.users index: name_1 dup key: { name: "vochihieu" }
+2021-10-23T21:19:11:     at C:\Users\84929\Desktop\Nodejs\node_modules\mongodb\lib\operations\insert.js:51:33
+2021-10-23T21:19:11:     at C:\Users\84929\Desktop\Nodejs\node_modules\mongodb\lib\cmap\connection_pool.js:272:25
+2021-10-23T21:19:11:     at handleOperationResult (C:\Users\84929\Desktop\Nodejs\node_modules\mongodb\lib\sdam\server.js:363:9)
+2021-10-23T21:19:11:     at MessageStream.messageHandler (C:\Users\84929\Desktop\Nodejs\node_modules\mongodb\lib\cmap\connection.js:479:9)
+2021-10-23T21:19:11:     at MessageStream.emit (events.js:400:28)
+2021-10-23T21:19:11:     at MessageStream.emit (domain.js:470:12)
+2021-10-23T21:19:11:     at processIncomingData (C:\Users\84929\Desktop\Nodejs\node_modules\mongodb\lib\cmap\message_stream.js:108:16)
+2021-10-23T21:19:11:     at MessageStream._write (C:\Users\84929\Desktop\Nodejs\node_modules\mongodb\lib\cmap\message_stream.js:28:9)
+2021-10-23T21:19:11:     at writeOrBuffer (internal/streams/writable.js:358:12)
+2021-10-23T21:19:11:     at MessageStream.Writable.write (internal/streams/writable.js:303:10) {
+2021-10-23T21:19:11:   index: 0,
+2021-10-23T21:19:11:   code: 11000,
+2021-10-23T21:19:11:   keyPattern: { name: 1 },
+2021-10-23T21:19:11:   keyValue: { name: 'vochihieu' }
+2021-10-23T21:19:11: }
+2021-10-23T21:19:24: error MongoServerError: E11000 duplicate key error collection: AppChat.users index: name_1 dup key: { name: "vochihieu" }
+2021-10-23T21:19:24:     at C:\Users\84929\Desktop\Nodejs\node_modules\mongodb\lib\operations\insert.js:51:33
+2021-10-23T21:19:24:     at C:\Users\84929\Desktop\Nodejs\node_modules\mongodb\lib\cmap\connection_pool.js:272:25
+2021-10-23T21:19:24:     at handleOperationResult (C:\Users\84929\Desktop\Nodejs\node_modules\mongodb\lib\sdam\server.js:363:9)
+2021-10-23T21:19:24:     at MessageStream.messageHandler (C:\Users\84929\Desktop\Nodejs\node_modules\mongodb\lib\cmap\connection.js:479:9)
+2021-10-23T21:19:24:     at MessageStream.emit (events.js:400:28)
+2021-10-23T21:19:24:     at MessageStream.emit (domain.js:470:12)
+2021-10-23T21:19:24:     at processIncomingData (C:\Users\84929\Desktop\Nodejs\node_modules\mongodb\lib\cmap\message_stream.js:108:16)
+2021-10-23T21:19:24:     at MessageStream._write (C:\Users\84929\Desktop\Nodejs\node_modules\mongodb\lib\cmap\message_stream.js:28:9)
+2021-10-23T21:19:24:     at writeOrBuffer (internal/streams/writable.js:358:12)
+2021-10-23T21:19:24:     at MessageStream.Writable.write (internal/streams/writable.js:303:10) {
+2021-10-23T21:19:24:   index: 0,
+2021-10-23T21:19:24:   code: 11000,
+2021-10-23T21:19:24:   keyPattern: { name: 1 },
+2021-10-23T21:19:24:   keyValue: { name: 'vochihieu' }
+2021-10-23T21:19:24: }
+2021-10-23T21:20:01: user has connected
+2021-10-23T21:20:30: user has connected
