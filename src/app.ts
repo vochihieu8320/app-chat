@@ -21,7 +21,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 
 const port = process.env.port;
-const host = process.env.host;
+
 const httpServer = createServer(app);
 const io = new Server(httpServer, { 
     cors: {
@@ -117,6 +117,6 @@ io.on("connection",  async(socket) => {
 
 
 
-httpServer.listen(port, ()=>{console.log(`Server listen at host ${host}`)})
+httpServer.listen(port, ()=>{console.log(`Server listen at port ${port}}`)})
 
 route(app)

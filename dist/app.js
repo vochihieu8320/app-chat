@@ -27,7 +27,6 @@ app.use(cors({
 app.use(express_1.default.json());
 app.use(express_1.default.urlencoded({ extended: false }));
 const port = process.env.port;
-const host = process.env.host;
 const httpServer = (0, http_1.createServer)(app);
 const io = new socket_io_1.Server(httpServer, {
     cors: {
@@ -98,5 +97,5 @@ io.on("connection", (socket) => __awaiter(void 0, void 0, void 0, function* () {
         }
     }));
 }));
-httpServer.listen(port, () => { console.log(`Server listen at host ${host}`); });
+httpServer.listen(port, () => { console.log(`Server listen at port ${port}}`); });
 (0, index_1.default)(app);
