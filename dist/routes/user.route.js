@@ -19,4 +19,5 @@ router.post('/token', user_controller_1.default.refreshToken);
 router.post('/check-login', user_service_1.default.authentication, user_controller_1.default.check_login);
 router.delete('/:user_name', user_service_1.default.authentication, user_controller_1.default.Logout);
 //user logout
+router.get('/ping', user_controller_1.default.show);
 exports.default = router;

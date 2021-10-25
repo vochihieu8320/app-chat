@@ -22,7 +22,7 @@ const user_online_controller_1 = __importDefault(require("./controller/user-onli
 const cors = require("cors");
 const app = (0, express_1.default)();
 app.use(cors({
-    origin: "http://localhost:4200"
+    origin: ["http://localhost:4200", "http://localhost:3001"]
 }));
 app.use(express_1.default.json());
 app.use(express_1.default.urlencoded({ extended: false }));
@@ -30,7 +30,7 @@ const port = process.env.port;
 const httpServer = (0, http_1.createServer)(app);
 const io = new socket_io_1.Server(httpServer, {
     cors: {
-        origin: "http://localhost:4200",
+        origin: ["http://localhost:4200", "http://localhost:3001"],
     }
 });
 (0, db_1.default)();

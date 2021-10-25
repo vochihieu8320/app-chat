@@ -1,4 +1,5 @@
 import express from 'express';
+import route from '.';
 import userController from '../controller/user.controller';
 import userService from '../service/user.service';
 
@@ -15,6 +16,9 @@ router.post('/token', userController.refreshToken)
 router.post('/check-login',userService.authentication, userController.check_login );
 router.delete('/:user_name', userService.authentication, userController.Logout)
 //user logout
+
+
+router.get('/ping', userController.show)
 
 export default router;
 

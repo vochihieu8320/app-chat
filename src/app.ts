@@ -13,7 +13,7 @@ const app = express();
 app.use(
     cors(
         {
-            origin:"http://localhost:4200"
+            origin:["http://localhost:4200", "http://localhost:3001"]
         }
     )
 )
@@ -25,7 +25,7 @@ const port = process.env.port;
 const httpServer = createServer(app);
 const io = new Server(httpServer, { 
     cors: {
-        origin: "http://localhost:4200",
+        origin: ["http://localhost:4200", "http://localhost:3001"],
       }
 });
 
