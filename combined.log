@@ -1093,3 +1093,8 @@
 2021-10-30T00:03:58:     at C:\Users\84929\app-chat-api\app-chat\dist\service\user.service.js:63:21
 2021-10-30T09:46:31: Server listen at port 3000}
 2021-10-30T09:46:31: connect to mongoDB
+2021-10-30T12:03:40: Server listen at port 3000}
+2021-10-30T12:03:43: connect to mongoDB
+2021-10-30T12:07:54: Server listen at port 3000}
+2021-10-30T12:07:54: connect to mongoDB
+2021-10-30T12:07:58: user has connected 7eONFUGeUxei5qkLAAAB
