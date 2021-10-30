@@ -12,10 +12,12 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+// import {Request, Response} from 'express'
 const user_service_1 = __importDefault(require("../service/user.service"));
 const user_model_1 = __importDefault(require("../model/user.model"));
 const session_model_1 = __importDefault(require("../model/session.model"));
-const jsonwebtoken_1 = __importDefault(require("jsonwebtoken"));
+// import jwt from "jsonwebtoken";
+const jwt = require('jsonwebtoken');
 class NewController {
     Register(req, res) {
         return __awaiter(this, void 0, void 0, function* () {
@@ -79,7 +81,7 @@ class NewController {
                     }
                     else {
                         //verify token
-                        const user = yield jsonwebtoken_1.default.verify(refresh, process.env.JWT_TOKEN_SECRET || "");
+                        const user = yield jwt.verify(refresh, process.env.JWT_TOKEN_SECRET || "");
                         //generate new token
                         const token = user_service_1.default.JWT(user);
                         const new_token = user_service_1.default.refreshToken(user);
@@ -116,7 +118,7 @@ class NewController {
                 //check token of user is valid or not
                 const sesion = yield session_model_1.default.findOne({ refreshToken: refreshToken });
                 try {
-                    const user = yield jsonwebtoken_1.default.verify(refreshToken, process.env.JWT_TOKEN_SECRET || "");
+                    const user = yield jwt.verify(refreshToken, process.env.JWT_TOKEN_SECRET || "");
                     const token = user_service_1.default.JWT(user);
                     const _refreshToken = user_service_1.default.refreshToken(user);
                     const update_session = { refreshToken: _refreshToken };

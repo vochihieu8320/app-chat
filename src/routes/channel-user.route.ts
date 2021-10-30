@@ -1,7 +1,6 @@
-import express from 'express';
+const express = require('express')
 import userService from '../service/user.service';
 import channelUserController from '../controller/channel-user.controller';
-import route from '.';
 
 
 const router = express.Router();

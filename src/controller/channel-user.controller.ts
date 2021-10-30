@@ -1,4 +1,3 @@
-import {Request, Response} from 'express'
 import ChannelUser from '../model/chanel-user.model';
 
 
@@ -6,7 +5,7 @@ import ChannelUser from '../model/chanel-user.model';
 
 class ChannelUserController
 {
-    async getListChannels(req: Request, res: Response)
+    async getListChannels(req: any, res: any)
     {
         const {userID, skip} = req.query;
         if(userID && skip)
@@ -54,7 +53,7 @@ class ChannelUserController
     }
 
 
-    async checkChannel(req: Request, res: Response)
+    async checkChannel(req: any, res: any)
     {
         const userID = req.params.userID;
         try {
@@ -66,7 +65,7 @@ class ChannelUserController
         }
     }
 
-    async deleteChannelUser(req: Request, res: Response)
+    async deleteChannelUser(req: any, res: any)
     {
         const {userID, channelID} = req.query
         try {
@@ -77,7 +76,7 @@ class ChannelUserController
         }
     }
 
-    async getUserInfo(req: Request, res: Response)
+    async getUserInfo(req: any, res: any)
     {
         const channelID = req.params.channelID;
         try {

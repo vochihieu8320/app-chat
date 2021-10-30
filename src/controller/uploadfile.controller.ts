@@ -1,4 +1,3 @@
-import {Request, Response} from 'express';
 import aws from '../service/aws.service';
 import conversationConller from './conversation.conller';
 
@@ -7,7 +6,7 @@ import conversationConller from './conversation.conller';
 
 class UploadfileController
 {
-   async upload(req: Request, res: Response)
+   async upload(req: any, res: any)
     {
        
         try {
@@ -24,7 +23,7 @@ class UploadfileController
        
     }
 
-    async getFile(req : Request, res: Response)
+    async getFile(req : any, res: any)
     {
         const key = req.params.key
         const readStream = await aws.getFileStream(key);
@@ -32,7 +31,7 @@ class UploadfileController
         
     }
 
-    async uploadAvtar(req: Request, res: Response)
+    async uploadAvtar(req: any, res: any)
     {
         const files = <any>req.file;       
         const file_upload = await aws.uploadFile(files, 'jpeg');

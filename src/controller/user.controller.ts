@@ -1,10 +1,11 @@
-import {Request, Response} from 'express'
+// import {Request, Response} from 'express'
 import userService from '../service/user.service'
 import User from '../model/user.model';
 import Session from '../model/session.model';
-import jwt from "jsonwebtoken"
+// import jwt from "jsonwebtoken";
+const jwt = require('jsonwebtoken');
 class NewController{
-    async Register(req: Request, res: Response)
+    async Register(req: any, res: any)
     {
         const password =  await userService.hashpass(req.body.password);
         let user_info = {...req.body}
@@ -28,7 +29,7 @@ class NewController{
     
     }
 
-    async Login (req: Request, res: Response)
+    async Login (req: any, res: any)
     {
         //look for user
         const {email, password} = req.body;
@@ -70,7 +71,7 @@ class NewController{
     }
 
 
-    async refreshToken(req: Request, res: Response)
+    async refreshToken(req: any, res: any)
     {
         const refresh = req.body.refreshToken;
         if(!refresh)
@@ -106,7 +107,7 @@ class NewController{
         }
     }
 
-    async createUser(req: Request, res: Response)
+    async createUser(req: any, res: any)
     {
        const user = {...req.body}
        try {
@@ -121,7 +122,7 @@ class NewController{
     }
 
 
-    async check_login(req : Request, res: Response)
+    async check_login(req : any, res: any)
     {
         const refreshToken = req.body.refreshToken
         try {
@@ -145,7 +146,7 @@ class NewController{
         }
     }
 
-    async Logout(req: Request, res: Response)
+    async Logout(req: any, res: any)
     {
         const userName = req.params.user_name;
         try {
@@ -157,7 +158,7 @@ class NewController{
 
     }
  
-    async detailUser(req: Request, res: Response)
+    async detailUser(req: any, res: any)
     {
         const userID = req.params.userID;
         const find_user = await User.findById(userID);
@@ -172,11 +173,11 @@ class NewController{
     }
 
 
-   async show(req: Request, res: Response){
+   async show(req: any, res: any){
         res.json({status: "ping"})
     }
 
-    async updateUser(req: Request, res: Response)
+    async updateUser(req: any, res: any)
     {
         const userID = req.params.userID;
         const body = {

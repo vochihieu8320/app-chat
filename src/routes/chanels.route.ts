@@ -1,4 +1,4 @@
-import express from 'express';
+const express = require('express')
 import ChanelController from '../controller/chanel.controller';
 import userService from '../service/user.service';
 

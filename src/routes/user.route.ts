@@ -1,4 +1,4 @@
-import express from 'express';
+const express = require('express')
 import userController from '../controller/user.controller';
 import userService from '../service/user.service';
 import uploadfileController from '../controller/uploadfile.controller';

@@ -1,8 +1,5 @@
-import bcrypt from "bcrypt"
-import jwt from "jsonwebtoken"
-import {Request, Response} from "express";
-
-
+const bcrypt = require('bcrypt')
+const jwt = require('jsonwebtoken')
 
 const token_secret = process.env.JWT_TOKEN_SECRET || ""
 async function hashpass(password: string)
@@ -48,7 +45,7 @@ function refreshToken(user: any)
 }
 
 
-async function authentication(req: Request, res: Response, next: any)
+async function authentication(req: any, res: any, next: any)
 {
   
     const autHeader = req.headers["authorization"];

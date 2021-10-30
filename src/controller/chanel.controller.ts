@@ -1,10 +1,9 @@
-import {Request, Response} from 'express'
 import Channel from '../model/chanel.model';
 import Chanel_User from '../model/chanel-user.model';
 import User from '../model/user.model';
 class ChanelController{
 
-    async create(req: Request, res: Response)
+    async create(req: any, res: any)
     {
         const name = req.body.name;
         const body = {
@@ -30,7 +29,7 @@ class ChanelController{
         }
     }
 
-    async join_channel(req: Request, res: Response)
+    async join_channel(req: any, res: any)
     {
      
         const {email, channelID} = req.body;
@@ -65,7 +64,7 @@ class ChanelController{
         }
     }
 
-    async DetailChannel(req: Request, res: Response)
+    async DetailChannel(req: any, res: any)
     {
         try {
             const channelID = req.params.channelID;
@@ -99,7 +98,7 @@ class ChanelController{
         }
     }
 
-    async updateChannel(req : Request , res: Response)
+    async updateChannel(req : any , res: any)
     {
         const channelID = req.params.channelID;
         try {
@@ -114,7 +113,7 @@ class ChanelController{
     }
 
 
-    async deleteChannel(req: Request , res: Response)
+    async deleteChannel(req: any , res: any)
     {
         const {userID, channelID} = req.query
         try {

@@ -1,8 +1,7 @@
-import {Request, Response} from 'express';
 
 class Pingcontroller {
 
-    hello(req: Request, res: Response)
+    hello(req: any, res: any)
     {
         res.json({data: "hello from vochihieu"})
     }

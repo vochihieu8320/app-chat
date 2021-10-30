@@ -1,6 +1,5 @@
 
 import user_oline from '../model/user-online.model';
-import {Request, Response} from 'express'
 
 
 
@@ -53,7 +52,7 @@ class userOnline{
         }
     }
 
-    async getUserOnlineTest(req: Request , res: Response)
+    async getUserOnlineTest(req: any , res: any)
     {
         try {
             // const userOnline = await user_oline.find({channelID : channelID});

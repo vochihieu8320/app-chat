@@ -8,29 +8,26 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
-const bcrypt_1 = __importDefault(require("bcrypt"));
-const jsonwebtoken_1 = __importDefault(require("jsonwebtoken"));
+const bcrypt = require('bcrypt');
+const jwt = require('jsonwebtoken');
 const token_secret = process.env.JWT_TOKEN_SECRET || "";
 function hashpass(password) {
     return __awaiter(this, void 0, void 0, function* () {
-        const password_hash = yield bcrypt_1.default.hash(password, 10);
+        const password_hash = yield bcrypt.hash(password, 10);
         return password_hash;
     });
 }
 function comparepass(password, hasspass) {
     return __awaiter(this, void 0, void 0, function* () {
-        if (yield bcrypt_1.default.compare(password, hasspass)) {
+        if (yield bcrypt.compare(password, hasspass)) {
             return true;
         }
         return false;
     });
 }
 function JWT(user) {
-    const token = jsonwebtoken_1.default.sign({
+    const token = jwt.sign({
         id: user.id,
         name: user.name,
         email: user.email
@@ -38,7 +35,7 @@ function JWT(user) {
     return token;
 }
 function refreshToken(user) {
-    const token = jsonwebtoken_1.default.sign({
+    const token = jwt.sign({
         id: user.id,
         name: user.name,
         email: user.email,
@@ -55,7 +52,7 @@ function authentication(req, res, next) {
         }
         else {
             try {
-                const user = yield jsonwebtoken_1.default.verify(token, process.env.JWT_TOKEN_SECRET || "");
+                const user = yield jwt.verify(token, process.env.JWT_TOKEN_SECRET || "");
                 if (user.refreshToken) {
                     res.json({ staus: 400, error: "please enter token !!" });
                 }

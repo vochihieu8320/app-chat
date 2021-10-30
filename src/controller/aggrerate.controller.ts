@@ -1,4 +1,3 @@
-import {Request, Response} from 'express'
 import Channel from '../model/chanel.model'
 import ChannelUser from '../model/chanel-user.model';
 
@@ -6,7 +5,7 @@ import ChannelUser from '../model/chanel-user.model';
 
 class AggrerateController
 {
-    async Aggrerate(req: Request, res: Response)
+    async Aggrerate(req: any, res: any)
     {
         const {userID, skip} = req.query;
         if(userID && skip)

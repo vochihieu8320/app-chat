@@ -1,4 +1,3 @@
-import {Request, Response} from 'express'
 import Conversation from '../model/conversation.model';
 
 class ConversationController{
@@ -23,7 +22,7 @@ class ConversationController{
         }
     }
 
-    async requestConversation(req: Request , res: Response)
+    async requestConversation(req: any , res: any)
     {
         try {
             const channelID = req.params.channelID

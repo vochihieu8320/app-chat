@@ -1,4 +1,5 @@
-import express from 'express';
+const express = require('express')
+
 import aggrerateController from '../controller/aggrerate.controller';
 
 const router = express.Router();
