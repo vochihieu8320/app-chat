@@ -1,6 +1,6 @@
 const express = require('express')
 import UploadfileController from '../controller/uploadfile.controller';
-import multer from 'multer';
+const multer = require('multer');
 import uploadfileController from '../controller/uploadfile.controller';
 const upload = multer({ dest: 'uploads/' }) 
 

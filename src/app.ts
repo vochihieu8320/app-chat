@@ -1,4 +1,5 @@
-import express from 'express';
+
+const express = require('express');
 import db from './db/db'
 import route from './routes/index'
 import { createServer } from "http";
