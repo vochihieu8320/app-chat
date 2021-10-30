@@ -1101,3 +1101,148 @@
 2021-10-30T12:08:21: Server listen at port 3000}
 2021-10-30T12:08:22: user has connected 24y8emuZsEH0aK7vAAAB
 2021-10-30T12:08:24: connect to mongoDB
+2021-10-30T12:48:45: Server listen at port 3000}
+2021-10-30T12:48:45: connect to mongoDB
+2021-10-30T13:03:18: user has connected cdkd64uKQLRP0bwjAAAB
+2021-10-30T13:06:52: Server listen at port 3000}
+2021-10-30T13:06:52: connect to mongoDB
+2021-10-30T13:08:09: Server listen at port 3000}
+2021-10-30T13:08:09: connect to mongoDB
+2021-10-30T13:09:40: Server listen at port 3000}
+2021-10-30T13:09:41: connect to mongoDB
+2021-10-30T13:15:50: user has connected 9R1bmjZh3iRKRfNnAAAB
+2021-10-30T13:16:34: user has connected iS1z8xTGK4JPEtwzAAAD
+2021-10-30T15:42:22: Server listen at port 3000}
+2021-10-30T15:42:22: connect to mongoDB
+2021-10-30T15:43:17: Server listen at port 3000}
+2021-10-30T15:43:17: connect to mongoDB
+2021-10-30T15:43:45: Server listen at port 3000}
+2021-10-30T15:43:45: connect to mongoDB
+2021-10-30T15:44:01: Server listen at port 3000}
+2021-10-30T15:44:01: connect to mongoDB
+2021-10-30T15:46:10: user has connected 0tDzfnFlinorCrBFAAAB
+2021-10-30T15:46:30: CastError: Cast to ObjectId failed for value "ping" (type string) at path "_id" for model "User"
+2021-10-30T15:46:30:     at model.Query.exec (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\query.js:4540:21)
+2021-10-30T15:46:30:     at model.Query.Query.then (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\query.js:4639:15)
+2021-10-30T15:46:30:     at processTicksAndRejections (internal/process/task_queues.js:95:5) {
+2021-10-30T15:46:30:   messageFormat: undefined,
+2021-10-30T15:46:30:   stringValue: '"ping"',
+2021-10-30T15:46:30:   kind: 'ObjectId',
+2021-10-30T15:46:30:   value: 'ping',
+2021-10-30T15:46:30:   path: '_id',
+2021-10-30T15:46:30:   reason: TypeError: Argument passed in must be a Buffer or string of 12 bytes or a string of 24 hex characters
+2021-10-30T15:46:30:       at new ObjectId (C:\Users\84929\app-chat-api\app-chat\node_modules\bson\lib\objectid.js:61:23)
+2021-10-30T15:46:30:       at castObjectId (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\cast\objectid.js:25:12)
+2021-10-30T15:46:30:       at ObjectId.cast (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\schema\objectid.js:246:12)
+2021-10-30T15:46:30:       at ObjectId.SchemaType.applySetters (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\schematype.js:1122:12)
+2021-10-30T15:46:30:       at ObjectId.SchemaType._castForQuery (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\schematype.js:1553:15)
+2021-10-30T15:46:30:       at ObjectId.SchemaType.castForQuery (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\schematype.js:1543:15)
+2021-10-30T15:46:30:       at ObjectId.SchemaType.castForQueryWrapper (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\schematype.js:1520:20)
+2021-10-30T15:46:30:       at cast (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\cast.js:338:32)
+2021-10-30T15:46:30:       at model.Query.Query.cast (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\query.js:4963:12)
+2021-10-30T15:46:30:       at model.Query.Query._castConditions (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\query.js:2055:10),
+2021-10-30T15:46:30:   valueType: 'string'
+2021-10-30T15:46:30: }
+2021-10-30T15:46:43: CastError: Cast to ObjectId failed for value "ping" (type string) at path "_id" for model "User"
+2021-10-30T15:46:43:     at model.Query.exec (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\query.js:4540:21)
+2021-10-30T15:46:43:     at model.Query.Query.then (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\query.js:4639:15)
+2021-10-30T15:46:43:     at processTicksAndRejections (internal/process/task_queues.js:95:5) {
+2021-10-30T15:46:43:   messageFormat: undefined,
+2021-10-30T15:46:43:   stringValue: '"ping"',
+2021-10-30T15:46:43:   kind: 'ObjectId',
+2021-10-30T15:46:43:   value: 'ping',
+2021-10-30T15:46:43:   path: '_id',
+2021-10-30T15:46:43:   reason: TypeError: Argument passed in must be a Buffer or string of 12 bytes or a string of 24 hex characters
+2021-10-30T15:46:43:       at new ObjectId (C:\Users\84929\app-chat-api\app-chat\node_modules\bson\lib\objectid.js:61:23)
+2021-10-30T15:46:43:       at castObjectId (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\cast\objectid.js:25:12)
+2021-10-30T15:46:43:       at ObjectId.cast (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\schema\objectid.js:246:12)
+2021-10-30T15:46:43:       at ObjectId.SchemaType.applySetters (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\schematype.js:1122:12)
+2021-10-30T15:46:43:       at ObjectId.SchemaType._castForQuery (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\schematype.js:1553:15)
+2021-10-30T15:46:43:       at ObjectId.SchemaType.castForQuery (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\schematype.js:1543:15)
+2021-10-30T15:46:43:       at ObjectId.SchemaType.castForQueryWrapper (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\schematype.js:1520:20)
+2021-10-30T15:46:43:       at cast (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\cast.js:338:32)
+2021-10-30T15:46:43:       at model.Query.Query.cast (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\query.js:4963:12)
+2021-10-30T15:46:43:       at model.Query.Query._castConditions (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\query.js:2055:10),
+2021-10-30T15:46:43:   valueType: 'string'
+2021-10-30T15:46:43: }
+2021-10-30T16:22:34: user has connected qo27XdHZ7mq5BOWJAAAD
+2021-10-30T16:23:47: user has connected iwIEhxJvpKqcZFJZAAAF
+2021-10-30T16:23:57: user has connected E8gvR2EiUuCz50MzAAAH
+2021-10-30T16:25:01: TypeError: Cannot read property 'path' of undefined
+2021-10-30T16:25:01:     at Object.uploadFile (C:\Users\84929\app-chat-api\app-chat\dist\service\aws.service.js:27:49)
+2021-10-30T16:25:01:     at C:\Users\84929\app-chat-api\app-chat\dist\controller\uploadfile.controller.js:43:61
+2021-10-30T16:25:01:     at Generator.next (<anonymous>)
+2021-10-30T16:25:01:     at C:\Users\84929\app-chat-api\app-chat\dist\controller\uploadfile.controller.js:8:71
+2021-10-30T16:25:01:     at new Promise (<anonymous>)
+2021-10-30T16:25:01:     at __awaiter (C:\Users\84929\app-chat-api\app-chat\dist\controller\uploadfile.controller.js:4:12)
+2021-10-30T16:25:01:     at uploadAvtar (C:\Users\84929\app-chat-api\app-chat\dist\controller\uploadfile.controller.js:41:16)
+2021-10-30T16:25:01:     at Layer.handle [as handle_request] (C:\Users\84929\app-chat-api\app-chat\node_modules\express\lib\router\layer.js:95:5)
+2021-10-30T16:25:01:     at next (C:\Users\84929\app-chat-api\app-chat\node_modules\express\lib\router\route.js:137:13)
+2021-10-30T16:25:01:     at C:\Users\84929\app-chat-api\app-chat\dist\service\user.service.js:63:21
+2021-10-30T16:27:25: TypeError: Cannot read property 'path' of undefined
+2021-10-30T16:27:25:     at Object.uploadFile (C:\Users\84929\app-chat-api\app-chat\dist\service\aws.service.js:27:49)
+2021-10-30T16:27:25:     at C:\Users\84929\app-chat-api\app-chat\dist\controller\uploadfile.controller.js:43:61
+2021-10-30T16:27:25:     at Generator.next (<anonymous>)
+2021-10-30T16:27:25:     at C:\Users\84929\app-chat-api\app-chat\dist\controller\uploadfile.controller.js:8:71
+2021-10-30T16:27:25:     at new Promise (<anonymous>)
+2021-10-30T16:27:25:     at __awaiter (C:\Users\84929\app-chat-api\app-chat\dist\controller\uploadfile.controller.js:4:12)
+2021-10-30T16:27:25:     at uploadAvtar (C:\Users\84929\app-chat-api\app-chat\dist\controller\uploadfile.controller.js:41:16)
+2021-10-30T16:27:25:     at Layer.handle [as handle_request] (C:\Users\84929\app-chat-api\app-chat\node_modules\express\lib\router\layer.js:95:5)
+2021-10-30T16:27:25:     at next (C:\Users\84929\app-chat-api\app-chat\node_modules\express\lib\router\route.js:137:13)
+2021-10-30T16:27:25:     at C:\Users\84929\app-chat-api\app-chat\dist\service\user.service.js:63:21
+2021-10-30T16:32:49: user has connected IrVYq5TuUwaioYAlAAAJ
+2021-10-30T16:32:49: user has connected LbPP4AvUZE3aMrBWAAAL
+2021-10-30T16:34:34: user has connected BzXy3NDoAaWSNataAAAN
+2021-10-30T16:34:34: user has connected zl_dwWCF6GGCn6uGAAAP
+2021-10-30T16:39:45: user has connected Okzeg-zHrxgHX74YAAAR
+2021-10-30T16:39:46: user has connected OTR7IPsprO8C8TkMAAAT
+2021-10-30T16:40:04: user has connected KI3fA8PYwbCKKPOpAAAV
+2021-10-30T16:40:05: user has connected n4pN9ANA9OAHSFYgAAAX
+2021-10-30T16:44:47: user has connected p8bbQaEqpkjCijijAAAZ
+2021-10-30T16:44:48: user has connected yEEyOnDeJYTx3b1GAAAb
+2021-10-30T16:45:26: user has connected DrynoPYZZz9qASmhAAAd
+2021-10-30T16:45:26: user has connected 4xndI1C52Xw55tBcAAAf
+2021-10-30T16:47:16: user has connected fneR_qECDaZjFofNAAAh
+2021-10-30T16:47:17: user has connected OHO63LlCll-sU6iQAAAj
+2021-10-30T16:48:26: user has connected 7w3gGEsAy2yF8SzNAAAl
+2021-10-30T16:48:27: user has connected C0YZl9ushWW8GLqqAAAn
+2021-10-30T16:49:38: user has connected gTh2h1RpYFBj4NnGAAAp
+2021-10-30T16:49:39: user has connected u66laIbCmJZoh3itAAAr
+2021-10-30T16:51:00: user has connected W-soXr200CyfF6kiAAAt
+2021-10-30T16:51:15: user has connected acly9eIOx9i0oiknAAAv
+2021-10-30T16:51:16: user has connected 6xWURsf9X9YvVZCHAAAx
+2021-10-30T16:52:40: user has connected HaB92miy1QuCJjqGAAAz
+2021-10-30T16:52:40: user has connected nnRMhi4CmSS1Hyw2AAA1
+2021-10-30T16:54:52: user has connected iiEX5g3z-zgteNAEAAA3
+2021-10-30T16:54:53: user has connected AOS46UJKDzWyi54qAAA5
+2021-10-30T16:55:02: user has connected bwEAQH4hvvgMHI9rAAA7
+2021-10-30T16:55:02: user has connected YVD557kkExqPEfIiAAA9
+2021-10-30T16:55:12: user has connected muazQEIAJ25ww5KVAAA_
+2021-10-30T16:55:55: user has connected Pwr_2RbS95AWt9J2AABB
+2021-10-30T16:55:56: user has connected MSNBD_urQx7QrQ61AABD
+2021-10-30T16:56:42: user has connected CkiUpwXl9nP3OOumAABF
+2021-10-30T16:57:59: user has connected CDmBvH1jEsc1awxIAABH
+2021-10-30T16:58:00: user has connected 3um0SpypqbhNQu2nAABJ
+2021-10-30T17:01:54: user has connected eswao_ctoyYoAkvVAABL
+2021-10-30T17:01:55: user has connected GYp1H6qo1GyBvMpfAABN
+2021-10-30T17:08:53: Server listen at port 3000}
+2021-10-30T17:08:53: connect to mongoDB
+2021-10-30T17:14:38: Server listen at port 3000}
+2021-10-30T17:14:38: connect to mongoDB
+2021-10-30T17:16:24: Server listen at port 3000}
+2021-10-30T17:16:24: connect to mongoDB
+2021-10-30T17:17:52: Server listen at port 3000}
+2021-10-30T17:17:52: connect to mongoDB
+2021-10-30T17:18:23: TypeError: Cannot read property 'userOfline' of undefined
+2021-10-30T17:18:23:     at C:\Users\84929\app-chat-api\app-chat\dist\controller\user-online.controller.js:83:31
+2021-10-30T17:18:23:     at Generator.next (<anonymous>)
+2021-10-30T17:18:23:     at fulfilled (C:\Users\84929\app-chat-api\app-chat\dist\controller\user-online.controller.js:5:58)
+2021-10-30T17:18:23:     at processTicksAndRejections (internal/process/task_queues.js:95:5)
+2021-10-30T17:18:59: Server listen at port 3000}
+2021-10-30T17:18:59: connect to mongoDB
+2021-10-30T17:20:22: Server listen at port 3000}
+2021-10-30T17:20:22: connect to mongoDB
+2021-10-30T20:54:10: Server listen at port 3000}
+2021-10-30T20:54:10: connect to mongoDB
+2021-10-30T21:21:59: Server listen at port 3000}
+2021-10-30T21:21:59: connect to mongoDB

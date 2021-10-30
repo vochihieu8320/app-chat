@@ -1,6 +1,9 @@
 
 import user_oline from '../model/user-online.model';
- 
+import {Request, Response} from 'express'
+
+
+
 class userOnline{
 
     async Create(userID: string, name: string, channelID: string, SocketID: string)
@@ -24,12 +27,65 @@ class userOnline{
     async getUserOnline( channelID: string)
     {
         try {
-            const userOnline = await user_oline.find({channelID : channelID});
+            const userOnline = await user_oline.aggregate([
+                {
+                    $match: {channelID: channelID}
+
+                },
+                {
+                    "$addFields": { "userIdconvert": { "$toObjectId": "$userID" }},
+                },
+                {
+                    $lookup:
+                        {
+                           
+                            from: "users",
+                            localField:"userIdconvert",
+                            foreignField: "_id",
+                            as: "userinfo"
+                        }
+                }
+               
+            ])
             return userOnline;
         } catch (error) {
             
         }
     }
+
+    async getUserOnlineTest(req: Request , res: Response)
+    {
+        try {
+            // const userOnline = await user_oline.find({channelID : channelID});
+
+            // return userOnline;
+            const channelID = req.params.channelID;
+            const userOnline = await user_oline.aggregate([
+                {
+                    $match: {channelID: channelID}
+
+                },
+                {
+                    "$addFields": { "userIdconvert": { "$toObjectId": "$userID" }},
+                },
+                {
+                    $lookup:
+                        {
+                           
+                            from: "users",
+                            localField:"userIdconvert",
+                            foreignField: "_id",
+                            as: "userinfo"
+                        }
+                }
+               
+            ])
+            res.json(userOnline);    
+        } catch (error) {
+            console.log(error);
+        }
+    }
+
 
     async userOfline(userID: string , channelID : string)
     {

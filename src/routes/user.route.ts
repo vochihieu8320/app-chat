@@ -8,7 +8,6 @@ const router = express.Router();
 
 router.get('/', userService.authentication, userController.show);
 router.get('/:userID', userService.authentication, userController.detailUser);
-router.get('/ping', userService.authentication, userController.show);
 
 router.post('/', userController.createUser);
 router.post('/register', userController.Register);

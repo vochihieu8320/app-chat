@@ -1,6 +1,7 @@
 import express from 'express';
 import userService from '../service/user.service';
 import channelUserController from '../controller/channel-user.controller';
+import route from '.';
 
 
 const router = express.Router();
@@ -13,7 +14,7 @@ router.get('/', userService.authentication, channelUserController.getListChannel
 
 router.get('/check-channel/:userID', userService.authentication, channelUserController.checkChannel)
 
-
+router.get('/:channelID/users', userService.authentication, channelUserController.getUserInfo)
 
 router.delete('/', userService.authentication, channelUserController.deleteChannelUser)
 

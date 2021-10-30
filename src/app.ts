@@ -52,7 +52,7 @@ adminNamespace.use((socket, next) => {
 
 io.on("connection",  async(socket) => {
 
-    console.log("user has connected", socket.id)
+    
    socket.on("send-messages", async(messages: message)=>{
        const body = {
            ...messages
@@ -114,6 +114,7 @@ io.on("connection",  async(socket) => {
    
 socket.on("disconnect", async() => {
     try {
+        console.log("user has left")
         await userOnline.userOffbrowser(socket.id);
         io.emit('user-off-browser', socket.id);
     } catch (error) {

@@ -76,6 +76,32 @@ class ChannelUserController
             res.sendStatus(400);
         }
     }
+
+    async getUserInfo(req: Request, res: Response)
+    {
+        const channelID = req.params.channelID;
+        try {
+            const result = await ChannelUser.aggregate([
+                {
+                    $match: {channelID: channelID}
+                },
+                { "$addFields": { "userIdConvert": { "$toObjectId": "$userID" }}},
+                {
+                    $lookup:
+                    {
+                       
+                        from: "users",
+                        localField:"userIdConvert",
+                        foreignField: "_id",
+                        as: "userInfo"
+                    }
+                }
+            ])
+            res.json(result);
+        } catch (error) {
+            res.sendStatus(500);
+        }
+    }
 }
 
 

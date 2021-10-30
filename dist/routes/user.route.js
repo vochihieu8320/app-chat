@@ -10,7 +10,6 @@ const uploadfile_controller_1 = __importDefault(require("../controller/uploadfil
 const router = express_1.default.Router();
 router.get('/', user_service_1.default.authentication, user_controller_1.default.show);
 router.get('/:userID', user_service_1.default.authentication, user_controller_1.default.detailUser);
-router.get('/ping', user_service_1.default.authentication, user_controller_1.default.show);
 router.post('/', user_controller_1.default.createUser);
 router.post('/register', user_controller_1.default.Register);
 //upload avatart

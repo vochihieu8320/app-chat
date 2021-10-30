@@ -46,7 +46,6 @@ adminNamespace.use((socket, next) => {
     next();
 });
 io.on("connection", (socket) => __awaiter(void 0, void 0, void 0, function* () {
-    console.log("user has connected", socket.id);
     socket.on("send-messages", (messages) => __awaiter(void 0, void 0, void 0, function* () {
         const body = Object.assign({}, messages);
         try {
@@ -98,6 +97,7 @@ io.on("connection", (socket) => __awaiter(void 0, void 0, void 0, function* () {
     }));
     socket.on("disconnect", () => __awaiter(void 0, void 0, void 0, function* () {
         try {
+            console.log("user has left");
             yield user_online_controller_1.default.userOffbrowser(socket.id);
             io.emit('user-off-browser', socket.id);
         }

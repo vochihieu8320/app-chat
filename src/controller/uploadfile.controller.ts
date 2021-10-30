@@ -2,6 +2,9 @@ import {Request, Response} from 'express';
 import aws from '../service/aws.service';
 import conversationConller from './conversation.conller';
 
+
+
+
 class UploadfileController
 {
    async upload(req: Request, res: Response)
@@ -10,6 +13,7 @@ class UploadfileController
         try {
             const files = <any>req.file;       
             const {userID, channelID, filetype, author} = req.query;
+            
             const file_upload = await aws.uploadFile(files, filetype);;
             await aws.deleteTempFile(files);
            return  res.json({status: 200, file: file_upload.Location})     

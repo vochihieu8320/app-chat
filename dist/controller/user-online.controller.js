@@ -35,10 +35,54 @@ class userOnline {
     getUserOnline(channelID) {
         return __awaiter(this, void 0, void 0, function* () {
             try {
-                const userOnline = yield user_online_model_1.default.find({ channelID: channelID });
+                const userOnline = yield user_online_model_1.default.aggregate([
+                    {
+                        $match: { channelID: channelID }
+                    },
+                    {
+                        "$addFields": { "userIdconvert": { "$toObjectId": "$userID" } },
+                    },
+                    {
+                        $lookup: {
+                            from: "users",
+                            localField: "userIdconvert",
+                            foreignField: "_id",
+                            as: "userinfo"
+                        }
+                    }
+                ]);
                 return userOnline;
             }
             catch (error) {
+            }
+        });
+    }
+    getUserOnlineTest(req, res) {
+        return __awaiter(this, void 0, void 0, function* () {
+            try {
+                // const userOnline = await user_oline.find({channelID : channelID});
+                // return userOnline;
+                const channelID = req.params.channelID;
+                const userOnline = yield user_online_model_1.default.aggregate([
+                    {
+                        $match: { channelID: channelID }
+                    },
+                    {
+                        "$addFields": { "userIdconvert": { "$toObjectId": "$userID" } },
+                    },
+                    {
+                        $lookup: {
+                            from: "users",
+                            localField: "userIdconvert",
+                            foreignField: "_id",
+                            as: "userinfo"
+                        }
+                    }
+                ]);
+                res.json(userOnline);
+            }
+            catch (error) {
+                console.log(error);
             }
         });
     }

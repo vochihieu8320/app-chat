@@ -75,5 +75,30 @@ class ChannelUserController {
             }
         });
     }
+    getUserInfo(req, res) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const channelID = req.params.channelID;
+            try {
+                const result = yield chanel_user_model_1.default.aggregate([
+                    {
+                        $match: { channelID: channelID }
+                    },
+                    { "$addFields": { "userIdConvert": { "$toObjectId": "$userID" } } },
+                    {
+                        $lookup: {
+                            from: "users",
+                            localField: "userIdConvert",
+                            foreignField: "_id",
+                            as: "userInfo"
+                        }
+                    }
+                ]);
+                res.json(result);
+            }
+            catch (error) {
+                res.sendStatus(500);
+            }
+        });
+    }
 }
 exports.default = new ChannelUserController;

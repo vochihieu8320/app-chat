@@ -4,6 +4,7 @@ import chanelRouter from './chanels.route'
 import channel_userRouter from './channel-user.route'
 import aggregateRouter from '../routes/aggrerate.route';
 import conversationRouter from '../routes/conversations.route';
+import useronlineRouter from './user-online.route'
 
 function route(app: any)
 {
@@ -12,8 +13,8 @@ function route(app: any)
     app.use('/channels', chanelRouter);
     app.use('/channels-user', channel_userRouter);
     app.use('/aggregate', aggregateRouter );
-    app.use('/conversation', conversationRouter)
-    
+    app.use('/conversation', conversationRouter);
+    app.use('/user-online', useronlineRouter);
 
 }
 

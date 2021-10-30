@@ -11,5 +11,6 @@ const router = express_1.default.Router();
 router.get('/', user_service_1.default.authentication, channel_user_controller_1.default.getListChannels);
 //check user has been participated 
 router.get('/check-channel/:userID', user_service_1.default.authentication, channel_user_controller_1.default.checkChannel);
+router.get('/:channelID/users', user_service_1.default.authentication, channel_user_controller_1.default.getUserInfo);
 router.delete('/', user_service_1.default.authentication, channel_user_controller_1.default.deleteChannelUser);
 exports.default = router;

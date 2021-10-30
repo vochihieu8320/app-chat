@@ -1,7 +1,7 @@
 import {Request, Response} from 'express'
 import Channel from '../model/chanel.model';
 import Chanel_User from '../model/chanel-user.model';
-import User from '../model/user.model'
+import User from '../model/user.model';
 class ChanelController{
 
     async create(req: Request, res: Response)
