@@ -114,7 +114,6 @@ io.on("connection",  async(socket) => {
    
 socket.on("disconnect", async() => {
     try {
-        console.log("user has left")
         await userOnline.userOffbrowser(socket.id);
         io.emit('user-off-browser', socket.id);
     } catch (error) {

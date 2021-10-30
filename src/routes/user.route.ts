@@ -25,7 +25,5 @@ router.delete('/:user_name', userService.authentication, userController.Logout)
 //user logout
 
 
-router.get('/ping', userController.show)
-
 export default router;
 

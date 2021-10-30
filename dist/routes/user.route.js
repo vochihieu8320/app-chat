@@ -23,5 +23,4 @@ router.post('/check-login', user_service_1.default.authentication, user_controll
 router.put('/:userID', user_service_1.default.authentication, user_controller_1.default.updateUser);
 router.delete('/:user_name', user_service_1.default.authentication, user_controller_1.default.Logout);
 //user logout
-router.get('/ping', user_controller_1.default.show);
 exports.default = router;
