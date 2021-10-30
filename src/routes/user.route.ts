@@ -1,6 +1,4 @@
-const express = require('express')
-import route from '.';
-import userOnlineController from '../controller/user-online.controller';
+import express from 'express';
 import userController from '../controller/user.controller';
 import userService from '../service/user.service';
 import uploadfileController from '../controller/uploadfile.controller';
