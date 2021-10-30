@@ -5,7 +5,7 @@
   "main": "dist/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "tsc && pm2 start ecosystem.config.js --env production",
+    "start": "tsc && pm2-runtime start ecosystem.config.js --env production",
     "build": "tsc -p ."
   },
   "keywords": [],
