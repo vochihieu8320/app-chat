@@ -14,7 +14,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const user_online_model_1 = __importDefault(require("../model/user-online.model"));
 class userOnline {
-    Create(userID, name, channelID) {
+    Create(userID, name, channelID, SocketID) {
         return __awaiter(this, void 0, void 0, function* () {
             try {
                 const find_useronline = yield user_online_model_1.default.findOne({ userID: userID, channelID: channelID });
@@ -22,7 +22,8 @@ class userOnline {
                     const body = {
                         userID: userID,
                         name: name,
-                        channelID: channelID
+                        channelID: channelID,
+                        socketID: SocketID
                     };
                     yield user_online_model_1.default.create(body);
                 }
@@ -48,6 +49,16 @@ class userOnline {
                 return yield user_online_model_1.default.find({ channelID: channelID });
             }
             catch (error) {
+            }
+        });
+    }
+    userOffbrowser(socketID) {
+        return __awaiter(this, void 0, void 0, function* () {
+            try {
+                yield user_online_model_1.default.deleteOne({ socketID: socketID });
+            }
+            catch (error) {
+                console.log(error);
             }
         });
     }

@@ -145,9 +145,35 @@ class NewController {
             }
         });
     }
+    detailUser(req, res) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const userID = req.params.userID;
+            const find_user = yield user_model_1.default.findById(userID);
+            if (find_user) {
+                res.json(find_user);
+            }
+            else {
+                res.json({ status: 400, error: "invalid userID" });
+            }
+        });
+    }
     show(req, res) {
         return __awaiter(this, void 0, void 0, function* () {
             res.json({ status: "ping" });
+        });
+    }
+    updateUser(req, res) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const userID = req.params.userID;
+            const body = Object.assign({}, req.body);
+            try {
+                yield user_model_1.default.updateOne({ _id: userID }, body);
+                res.json(yield user_model_1.default.findById(userID));
+            }
+            catch (error) {
+                console.log(error);
+                res.sendStatus(500);
+            }
         });
     }
 }

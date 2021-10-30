@@ -28,6 +28,14 @@ class UploadfileController
         
     }
 
+    async uploadAvtar(req: Request, res: Response)
+    {
+        const files = <any>req.file;       
+        const file_upload = await aws.uploadFile(files, 'jpeg');
+        await aws.deleteTempFile(files);
+        return  res.json({status: 200, file: file_upload.Location}) 
+    }
+
 }
 
 export default new UploadfileController

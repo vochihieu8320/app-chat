@@ -157,11 +157,38 @@ class NewController{
 
     }
  
-
+    async detailUser(req: Request, res: Response)
+    {
+        const userID = req.params.userID;
+        const find_user = await User.findById(userID);
+        if(find_user)
+        {
+            res.json(find_user);
+        }
+        else
+        {
+            res.json({status: 400, error: "invalid userID"})
+        }
+    }
 
 
    async show(req: Request, res: Response){
         res.json({status: "ping"})
+    }
+
+    async updateUser(req: Request, res: Response)
+    {
+        const userID = req.params.userID;
+        const body = {
+            ...req.body
+        }
+        try {
+            await User.updateOne({_id: userID}, body);
+            res.json(await User.findById(userID));
+        } catch (error) {
+            console.log(error);
+            res.sendStatus(500);
+        }
     }
 }
 

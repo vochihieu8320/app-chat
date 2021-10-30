@@ -5,7 +5,13 @@ const user_online = new mongoose.Schema(
     {
         userID: String,
         name: String,
-        channelID : String
+        channelID : String,
+        socketID: {
+            type: String,
+            required: true,
+            unique: true
+
+        }
     },
     { timestamps: true }
 )

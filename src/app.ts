@@ -52,7 +52,7 @@ adminNamespace.use((socket, next) => {
 
 io.on("connection",  async(socket) => {
 
-    console.log("user has connected")
+    console.log("user has connected", socket.id)
    socket.on("send-messages", async(messages: message)=>{
        const body = {
            ...messages
@@ -89,7 +89,7 @@ io.on("connection",  async(socket) => {
        socket.join(channelID);
        try {
         const message = await conversationConller.getChannelConversation(channelID);
-        await userOnline.Create(userID, username, channelID);
+        await userOnline.Create(userID, username, channelID, socket.id);
         callback({
             status: "ok"
           });
@@ -111,7 +111,17 @@ io.on("connection",  async(socket) => {
         }
    });
 
+   
+socket.on("disconnect", async() => {
+    try {
+        await userOnline.userOffbrowser(socket.id);
+        io.emit('user-off-browser', socket.id);
+    } catch (error) {
+        console.log(error);
+    }
 
+
+  });
 
 });
 

@@ -37,5 +37,13 @@ class UploadfileController {
             readStream.pipe(res);
         });
     }
+    uploadAvtar(req, res) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const files = req.file;
+            const file_upload = yield aws_service_1.default.uploadFile(files, 'jpeg');
+            yield aws_service_1.default.deleteTempFile(files);
+            return res.json({ status: 200, file: file_upload.Location });
+        });
+    }
 }
 exports.default = new UploadfileController;

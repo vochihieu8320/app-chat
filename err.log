@@ -9,3 +9,47 @@
 2021-10-19T12:35:10:     at IncomingMessage.emit (domain.js:470:12)
 2021-10-19T12:35:10:     at endReadableNT (internal/streams/readable.js:1317:12)
 2021-10-19T12:35:10:     at processTicksAndRejections (internal/process/task_queues.js:82:21)
+2021-10-29T22:31:03: CastError: Cast to ObjectId failed for value "614791ac499f70eda22df39" (type string) at path "_id" for model "User"
+2021-10-29T22:31:03:     at model.Query.exec (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\query.js:4540:21)
+2021-10-29T22:31:03:     at model.Query.Query.then (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\query.js:4639:15)
+2021-10-29T22:31:03:     at processTicksAndRejections (internal/process/task_queues.js:95:5) {
+2021-10-29T22:31:03:   messageFormat: undefined,
+2021-10-29T22:31:03:   stringValue: '"614791ac499f70eda22df39"',
+2021-10-29T22:31:03:   kind: 'ObjectId',
+2021-10-29T22:31:03:   value: '614791ac499f70eda22df39',
+2021-10-29T22:31:03:   path: '_id',
+2021-10-29T22:31:03:   reason: TypeError: Argument passed in must be a Buffer or string of 12 bytes or a string of 24 hex characters
+2021-10-29T22:31:03:       at new ObjectId (C:\Users\84929\app-chat-api\app-chat\node_modules\bson\lib\objectid.js:61:23)
+2021-10-29T22:31:03:       at castObjectId (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\cast\objectid.js:25:12)
+2021-10-29T22:31:03:       at ObjectId.cast (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\schema\objectid.js:246:12)
+2021-10-29T22:31:03:       at ObjectId.SchemaType.applySetters (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\schematype.js:1122:12)
+2021-10-29T22:31:03:       at ObjectId.SchemaType._castForQuery (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\schematype.js:1553:15)
+2021-10-29T22:31:03:       at ObjectId.SchemaType.castForQuery (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\schematype.js:1543:15)
+2021-10-29T22:31:03:       at ObjectId.SchemaType.castForQueryWrapper (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\schematype.js:1520:20)
+2021-10-29T22:31:03:       at cast (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\cast.js:338:32)
+2021-10-29T22:31:03:       at model.Query.Query.cast (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\query.js:4963:12)
+2021-10-29T22:31:03:       at model.Query.Query._castConditions (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\query.js:2055:10),
+2021-10-29T22:31:03:   valueType: 'string'
+2021-10-29T22:31:03: }
+2021-10-30T00:01:03: TypeError: Cannot read property 'path' of undefined
+2021-10-30T00:01:03:     at Object.uploadFile (C:\Users\84929\app-chat-api\app-chat\dist\service\aws.service.js:27:49)
+2021-10-30T00:01:03:     at C:\Users\84929\app-chat-api\app-chat\dist\controller\uploadfile.controller.js:43:61
+2021-10-30T00:01:03:     at Generator.next (<anonymous>)
+2021-10-30T00:01:03:     at C:\Users\84929\app-chat-api\app-chat\dist\controller\uploadfile.controller.js:8:71
+2021-10-30T00:01:03:     at new Promise (<anonymous>)
+2021-10-30T00:01:03:     at __awaiter (C:\Users\84929\app-chat-api\app-chat\dist\controller\uploadfile.controller.js:4:12)
+2021-10-30T00:01:03:     at uploadAvtar (C:\Users\84929\app-chat-api\app-chat\dist\controller\uploadfile.controller.js:41:16)
+2021-10-30T00:01:03:     at Layer.handle [as handle_request] (C:\Users\84929\app-chat-api\app-chat\node_modules\express\lib\router\layer.js:95:5)
+2021-10-30T00:01:03:     at next (C:\Users\84929\app-chat-api\app-chat\node_modules\express\lib\router\route.js:137:13)
+2021-10-30T00:01:03:     at C:\Users\84929\app-chat-api\app-chat\dist\service\user.service.js:63:21
+2021-10-30T00:03:58: TypeError: Cannot read property 'path' of undefined
+2021-10-30T00:03:58:     at Object.uploadFile (C:\Users\84929\app-chat-api\app-chat\dist\service\aws.service.js:27:49)
+2021-10-30T00:03:58:     at C:\Users\84929\app-chat-api\app-chat\dist\controller\uploadfile.controller.js:43:61
+2021-10-30T00:03:58:     at Generator.next (<anonymous>)
+2021-10-30T00:03:58:     at C:\Users\84929\app-chat-api\app-chat\dist\controller\uploadfile.controller.js:8:71
+2021-10-30T00:03:58:     at new Promise (<anonymous>)
+2021-10-30T00:03:58:     at __awaiter (C:\Users\84929\app-chat-api\app-chat\dist\controller\uploadfile.controller.js:4:12)
+2021-10-30T00:03:58:     at uploadAvtar (C:\Users\84929\app-chat-api\app-chat\dist\controller\uploadfile.controller.js:41:16)
+2021-10-30T00:03:58:     at Layer.handle [as handle_request] (C:\Users\84929\app-chat-api\app-chat\node_modules\express\lib\router\layer.js:95:5)
+2021-10-30T00:03:58:     at next (C:\Users\84929\app-chat-api\app-chat\node_modules\express\lib\router\route.js:137:13)
+2021-10-30T00:03:58:     at C:\Users\84929\app-chat-api\app-chat\dist\service\user.service.js:63:21

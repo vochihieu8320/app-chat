@@ -3,7 +3,7 @@ import user_oline from '../model/user-online.model';
  
 class userOnline{
 
-    async Create(userID: string, name: string, channelID: string)
+    async Create(userID: string, name: string, channelID: string, SocketID: string)
     {
         try {
             const find_useronline = await user_oline.findOne({userID: userID, channelID: channelID});
@@ -12,7 +12,8 @@ class userOnline{
                 const body = {
                     userID: userID,
                     name: name,
-                    channelID: channelID
+                    channelID: channelID,
+                    socketID: SocketID
                 }
                 await user_oline.create(body)
             }
@@ -37,6 +38,16 @@ class userOnline{
             return await user_oline.find({channelID : channelID});
         } catch (error) {
             
+        }
+    }
+
+    async userOffbrowser(socketID: string)
+    {
+        try {
+            await user_oline.deleteOne({socketID: socketID});
+
+        } catch (error) {
+            console.log(error);
         }
     }
 }

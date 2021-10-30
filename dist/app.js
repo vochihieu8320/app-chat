@@ -46,7 +46,7 @@ adminNamespace.use((socket, next) => {
     next();
 });
 io.on("connection", (socket) => __awaiter(void 0, void 0, void 0, function* () {
-    console.log("user has connected");
+    console.log("user has connected", socket.id);
     socket.on("send-messages", (messages) => __awaiter(void 0, void 0, void 0, function* () {
         const body = Object.assign({}, messages);
         try {
@@ -75,7 +75,7 @@ io.on("connection", (socket) => __awaiter(void 0, void 0, void 0, function* () {
         socket.join(channelID);
         try {
             const message = yield conversation_conller_1.default.getChannelConversation(channelID);
-            yield user_online_controller_1.default.Create(userID, username, channelID);
+            yield user_online_controller_1.default.Create(userID, username, channelID, socket.id);
             callback({
                 status: "ok"
             });
@@ -91,6 +91,15 @@ io.on("connection", (socket) => __awaiter(void 0, void 0, void 0, function* () {
             callback({
                 status: user_online
             });
+        }
+        catch (error) {
+            console.log(error);
+        }
+    }));
+    socket.on("disconnect", () => __awaiter(void 0, void 0, void 0, function* () {
+        try {
+            yield user_online_controller_1.default.userOffbrowser(socket.id);
+            io.emit('user-off-browser', socket.id);
         }
         catch (error) {
             console.log(error);
