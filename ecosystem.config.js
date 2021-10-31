@@ -4,7 +4,6 @@ module.exports = {
     script: "dist/app.js",
     env: {
       NODE_ENV: "development",
-      PORT : "3000",
       db : "mongodb://localhost:27017/AppChat",
       JWT_TOKEN_SECRET: "vch@11111111iiiiiiiii",
       AWS_BUCKET_NAME : "appchatbucket",
@@ -14,7 +13,6 @@ module.exports = {
     },
     env_production: {
       NODE_ENV: "production",
-      PORT : "3000",
       JWT_TOKEN_SECRET: "vch@11111111iiiiiiiii",
       AWS_BUCKET_NAME : "appchatbucket",
       AWS_ACCESS_KEYID: "AKIA5MSNVFQ2FCAZV62I",

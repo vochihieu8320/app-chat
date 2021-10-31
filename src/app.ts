@@ -21,7 +21,7 @@ app.use(
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 
-const port = process.env.PORT  || 3000;
+const port = process.env.PORT  || 8080;
 
 const httpServer = createServer(app);
 const io = new Server(httpServer, { 
