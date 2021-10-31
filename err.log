@@ -188,3 +188,419 @@
 2021-10-30T23:04:36:       at model.Query.Query._castConditions (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\query.js:2055:10),
 2021-10-30T23:04:36:   valueType: 'string'
 2021-10-30T23:04:36: }
+2021-10-31T11:02:52: Error: Cannot find module 'bcrypt'
+2021-10-31T11:02:52: Require stack:
+2021-10-31T11:02:52: - C:\Users\84929\app-chat-api\app-chat\dist\service\user.service.js
+2021-10-31T11:02:52: - C:\Users\84929\app-chat-api\app-chat\dist\controller\user.controller.js
+2021-10-31T11:02:52: - C:\Users\84929\app-chat-api\app-chat\dist\routes\user.route.js
+2021-10-31T11:02:52: - C:\Users\84929\app-chat-api\app-chat\dist\routes\index.js
+2021-10-31T11:02:52: - C:\Users\84929\app-chat-api\app-chat\dist\app.js
+2021-10-31T11:02:52:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:889:15)
+2021-10-31T11:02:52:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:61:29)
+2021-10-31T11:02:52:     at require (internal/modules/cjs/helpers.js:92:18)
+2021-10-31T11:02:52:     at Object.<anonymous> (C:\Users\84929\app-chat-api\app-chat\dist\service\user.service.js:12:16)
+2021-10-31T11:02:52:     at Module._compile (internal/modules/cjs/loader.js:1072:14)
+2021-10-31T11:02:52:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)
+2021-10-31T11:02:52:     at Module.load (internal/modules/cjs/loader.js:937:32)
+2021-10-31T11:02:52:     at Function.Module._load (internal/modules/cjs/loader.js:778:12)
+2021-10-31T11:02:52:     at Module.require (internal/modules/cjs/loader.js:961:19)
+2021-10-31T11:02:52:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39) {
+2021-10-31T11:02:52:   code: 'MODULE_NOT_FOUND',
+2021-10-31T11:02:52:   requireStack: [
+2021-10-31T11:02:52:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\service\\user.service.js',
+2021-10-31T11:02:52:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\controller\\user.controller.js',
+2021-10-31T11:02:52:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\routes\\user.route.js',
+2021-10-31T11:02:52:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\routes\\index.js',
+2021-10-31T11:02:52:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\app.js'
+2021-10-31T11:02:52:   ]
+2021-10-31T11:02:52: }
+2021-10-31T11:02:53: Error: Cannot find module 'bcrypt'
+2021-10-31T11:02:53: Require stack:
+2021-10-31T11:02:53: - C:\Users\84929\app-chat-api\app-chat\dist\service\user.service.js
+2021-10-31T11:02:53: - C:\Users\84929\app-chat-api\app-chat\dist\controller\user.controller.js
+2021-10-31T11:02:53: - C:\Users\84929\app-chat-api\app-chat\dist\routes\user.route.js
+2021-10-31T11:02:53: - C:\Users\84929\app-chat-api\app-chat\dist\routes\index.js
+2021-10-31T11:02:53: - C:\Users\84929\app-chat-api\app-chat\dist\app.js
+2021-10-31T11:02:53:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:889:15)
+2021-10-31T11:02:53:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:61:29)
+2021-10-31T11:02:53:     at require (internal/modules/cjs/helpers.js:92:18)
+2021-10-31T11:02:53:     at Object.<anonymous> (C:\Users\84929\app-chat-api\app-chat\dist\service\user.service.js:12:16)
+2021-10-31T11:02:53:     at Module._compile (internal/modules/cjs/loader.js:1072:14)
+2021-10-31T11:02:53:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)
+2021-10-31T11:02:53:     at Module.load (internal/modules/cjs/loader.js:937:32)
+2021-10-31T11:02:53:     at Function.Module._load (internal/modules/cjs/loader.js:778:12)
+2021-10-31T11:02:53:     at Module.require (internal/modules/cjs/loader.js:961:19)
+2021-10-31T11:02:53:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39) {
+2021-10-31T11:02:53:   code: 'MODULE_NOT_FOUND',
+2021-10-31T11:02:53:   requireStack: [
+2021-10-31T11:02:53:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\service\\user.service.js',
+2021-10-31T11:02:53:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\controller\\user.controller.js',
+2021-10-31T11:02:53:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\routes\\user.route.js',
+2021-10-31T11:02:53:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\routes\\index.js',
+2021-10-31T11:02:53:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\app.js'
+2021-10-31T11:02:53:   ]
+2021-10-31T11:02:53: }
+2021-10-31T11:02:53: Error: Cannot find module 'bcrypt'
+2021-10-31T11:02:53: Require stack:
+2021-10-31T11:02:53: - C:\Users\84929\app-chat-api\app-chat\dist\service\user.service.js
+2021-10-31T11:02:53: - C:\Users\84929\app-chat-api\app-chat\dist\controller\user.controller.js
+2021-10-31T11:02:53: - C:\Users\84929\app-chat-api\app-chat\dist\routes\user.route.js
+2021-10-31T11:02:53: - C:\Users\84929\app-chat-api\app-chat\dist\routes\index.js
+2021-10-31T11:02:53: - C:\Users\84929\app-chat-api\app-chat\dist\app.js
+2021-10-31T11:02:53:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:889:15)
+2021-10-31T11:02:53:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:61:29)
+2021-10-31T11:02:53:     at require (internal/modules/cjs/helpers.js:92:18)
+2021-10-31T11:02:53:     at Object.<anonymous> (C:\Users\84929\app-chat-api\app-chat\dist\service\user.service.js:12:16)
+2021-10-31T11:02:53:     at Module._compile (internal/modules/cjs/loader.js:1072:14)
+2021-10-31T11:02:53:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)
+2021-10-31T11:02:53:     at Module.load (internal/modules/cjs/loader.js:937:32)
+2021-10-31T11:02:53:     at Function.Module._load (internal/modules/cjs/loader.js:778:12)
+2021-10-31T11:02:53:     at Module.require (internal/modules/cjs/loader.js:961:19)
+2021-10-31T11:02:53:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39) {
+2021-10-31T11:02:53:   code: 'MODULE_NOT_FOUND',
+2021-10-31T11:02:53:   requireStack: [
+2021-10-31T11:02:53:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\service\\user.service.js',
+2021-10-31T11:02:53:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\controller\\user.controller.js',
+2021-10-31T11:02:53:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\routes\\user.route.js',
+2021-10-31T11:02:53:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\routes\\index.js',
+2021-10-31T11:02:53:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\app.js'
+2021-10-31T11:02:53:   ]
+2021-10-31T11:02:53: }
+2021-10-31T11:02:54: Error: Cannot find module 'bcrypt'
+2021-10-31T11:02:54: Require stack:
+2021-10-31T11:02:54: - C:\Users\84929\app-chat-api\app-chat\dist\service\user.service.js
+2021-10-31T11:02:54: - C:\Users\84929\app-chat-api\app-chat\dist\controller\user.controller.js
+2021-10-31T11:02:54: - C:\Users\84929\app-chat-api\app-chat\dist\routes\user.route.js
+2021-10-31T11:02:54: - C:\Users\84929\app-chat-api\app-chat\dist\routes\index.js
+2021-10-31T11:02:54: - C:\Users\84929\app-chat-api\app-chat\dist\app.js
+2021-10-31T11:02:54:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:889:15)
+2021-10-31T11:02:54:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:61:29)
+2021-10-31T11:02:54:     at require (internal/modules/cjs/helpers.js:92:18)
+2021-10-31T11:02:54:     at Object.<anonymous> (C:\Users\84929\app-chat-api\app-chat\dist\service\user.service.js:12:16)
+2021-10-31T11:02:54:     at Module._compile (internal/modules/cjs/loader.js:1072:14)
+2021-10-31T11:02:54:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)
+2021-10-31T11:02:54:     at Module.load (internal/modules/cjs/loader.js:937:32)
+2021-10-31T11:02:54:     at Function.Module._load (internal/modules/cjs/loader.js:778:12)
+2021-10-31T11:02:54:     at Module.require (internal/modules/cjs/loader.js:961:19)
+2021-10-31T11:02:54:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39) {
+2021-10-31T11:02:54:   code: 'MODULE_NOT_FOUND',
+2021-10-31T11:02:54:   requireStack: [
+2021-10-31T11:02:54:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\service\\user.service.js',
+2021-10-31T11:02:54:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\controller\\user.controller.js',
+2021-10-31T11:02:54:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\routes\\user.route.js',
+2021-10-31T11:02:54:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\routes\\index.js',
+2021-10-31T11:02:54:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\app.js'
+2021-10-31T11:02:54:   ]
+2021-10-31T11:02:54: }
+2021-10-31T11:02:54: Error: Cannot find module 'bcrypt'
+2021-10-31T11:02:54: Require stack:
+2021-10-31T11:02:54: - C:\Users\84929\app-chat-api\app-chat\dist\service\user.service.js
+2021-10-31T11:02:54: - C:\Users\84929\app-chat-api\app-chat\dist\controller\user.controller.js
+2021-10-31T11:02:54: - C:\Users\84929\app-chat-api\app-chat\dist\routes\user.route.js
+2021-10-31T11:02:54: - C:\Users\84929\app-chat-api\app-chat\dist\routes\index.js
+2021-10-31T11:02:54: - C:\Users\84929\app-chat-api\app-chat\dist\app.js
+2021-10-31T11:02:54:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:889:15)
+2021-10-31T11:02:54:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:61:29)
+2021-10-31T11:02:54:     at require (internal/modules/cjs/helpers.js:92:18)
+2021-10-31T11:02:54:     at Object.<anonymous> (C:\Users\84929\app-chat-api\app-chat\dist\service\user.service.js:12:16)
+2021-10-31T11:02:54:     at Module._compile (internal/modules/cjs/loader.js:1072:14)
+2021-10-31T11:02:54:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)
+2021-10-31T11:02:54:     at Module.load (internal/modules/cjs/loader.js:937:32)
+2021-10-31T11:02:54:     at Function.Module._load (internal/modules/cjs/loader.js:778:12)
+2021-10-31T11:02:54:     at Module.require (internal/modules/cjs/loader.js:961:19)
+2021-10-31T11:02:54:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39) {
+2021-10-31T11:02:54:   code: 'MODULE_NOT_FOUND',
+2021-10-31T11:02:54:   requireStack: [
+2021-10-31T11:02:54:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\service\\user.service.js',
+2021-10-31T11:02:54:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\controller\\user.controller.js',
+2021-10-31T11:02:54:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\routes\\user.route.js',
+2021-10-31T11:02:54:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\routes\\index.js',
+2021-10-31T11:02:54:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\app.js'
+2021-10-31T11:02:54:   ]
+2021-10-31T11:02:54: }
+2021-10-31T11:02:55: Error: Cannot find module 'bcrypt'
+2021-10-31T11:02:55: Require stack:
+2021-10-31T11:02:55: - C:\Users\84929\app-chat-api\app-chat\dist\service\user.service.js
+2021-10-31T11:02:55: - C:\Users\84929\app-chat-api\app-chat\dist\controller\user.controller.js
+2021-10-31T11:02:55: - C:\Users\84929\app-chat-api\app-chat\dist\routes\user.route.js
+2021-10-31T11:02:55: - C:\Users\84929\app-chat-api\app-chat\dist\routes\index.js
+2021-10-31T11:02:55: - C:\Users\84929\app-chat-api\app-chat\dist\app.js
+2021-10-31T11:02:55:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:889:15)
+2021-10-31T11:02:55:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:61:29)
+2021-10-31T11:02:55:     at require (internal/modules/cjs/helpers.js:92:18)
+2021-10-31T11:02:55:     at Object.<anonymous> (C:\Users\84929\app-chat-api\app-chat\dist\service\user.service.js:12:16)
+2021-10-31T11:02:55:     at Module._compile (internal/modules/cjs/loader.js:1072:14)
+2021-10-31T11:02:55:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)
+2021-10-31T11:02:55:     at Module.load (internal/modules/cjs/loader.js:937:32)
+2021-10-31T11:02:55:     at Function.Module._load (internal/modules/cjs/loader.js:778:12)
+2021-10-31T11:02:55:     at Module.require (internal/modules/cjs/loader.js:961:19)
+2021-10-31T11:02:55:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39) {
+2021-10-31T11:02:55:   code: 'MODULE_NOT_FOUND',
+2021-10-31T11:02:55:   requireStack: [
+2021-10-31T11:02:55:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\service\\user.service.js',
+2021-10-31T11:02:55:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\controller\\user.controller.js',
+2021-10-31T11:02:55:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\routes\\user.route.js',
+2021-10-31T11:02:55:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\routes\\index.js',
+2021-10-31T11:02:55:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\app.js'
+2021-10-31T11:02:55:   ]
+2021-10-31T11:02:55: }
+2021-10-31T11:02:55: Error: Cannot find module 'bcrypt'
+2021-10-31T11:02:55: Require stack:
+2021-10-31T11:02:55: - C:\Users\84929\app-chat-api\app-chat\dist\service\user.service.js
+2021-10-31T11:02:55: - C:\Users\84929\app-chat-api\app-chat\dist\controller\user.controller.js
+2021-10-31T11:02:55: - C:\Users\84929\app-chat-api\app-chat\dist\routes\user.route.js
+2021-10-31T11:02:55: - C:\Users\84929\app-chat-api\app-chat\dist\routes\index.js
+2021-10-31T11:02:55: - C:\Users\84929\app-chat-api\app-chat\dist\app.js
+2021-10-31T11:02:55:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:889:15)
+2021-10-31T11:02:55:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:61:29)
+2021-10-31T11:02:55:     at require (internal/modules/cjs/helpers.js:92:18)
+2021-10-31T11:02:55:     at Object.<anonymous> (C:\Users\84929\app-chat-api\app-chat\dist\service\user.service.js:12:16)
+2021-10-31T11:02:55:     at Module._compile (internal/modules/cjs/loader.js:1072:14)
+2021-10-31T11:02:55:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)
+2021-10-31T11:02:55:     at Module.load (internal/modules/cjs/loader.js:937:32)
+2021-10-31T11:02:55:     at Function.Module._load (internal/modules/cjs/loader.js:778:12)
+2021-10-31T11:02:55:     at Module.require (internal/modules/cjs/loader.js:961:19)
+2021-10-31T11:02:55:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39) {
+2021-10-31T11:02:55:   code: 'MODULE_NOT_FOUND',
+2021-10-31T11:02:55:   requireStack: [
+2021-10-31T11:02:55:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\service\\user.service.js',
+2021-10-31T11:02:55:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\controller\\user.controller.js',
+2021-10-31T11:02:55:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\routes\\user.route.js',
+2021-10-31T11:02:55:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\routes\\index.js',
+2021-10-31T11:02:55:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\app.js'
+2021-10-31T11:02:55:   ]
+2021-10-31T11:02:55: }
+2021-10-31T11:02:56: Error: Cannot find module 'bcrypt'
+2021-10-31T11:02:56: Require stack:
+2021-10-31T11:02:56: - C:\Users\84929\app-chat-api\app-chat\dist\service\user.service.js
+2021-10-31T11:02:56: - C:\Users\84929\app-chat-api\app-chat\dist\controller\user.controller.js
+2021-10-31T11:02:56: - C:\Users\84929\app-chat-api\app-chat\dist\routes\user.route.js
+2021-10-31T11:02:56: - C:\Users\84929\app-chat-api\app-chat\dist\routes\index.js
+2021-10-31T11:02:56: - C:\Users\84929\app-chat-api\app-chat\dist\app.js
+2021-10-31T11:02:56:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:889:15)
+2021-10-31T11:02:56:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:61:29)
+2021-10-31T11:02:56:     at require (internal/modules/cjs/helpers.js:92:18)
+2021-10-31T11:02:56:     at Object.<anonymous> (C:\Users\84929\app-chat-api\app-chat\dist\service\user.service.js:12:16)
+2021-10-31T11:02:56:     at Module._compile (internal/modules/cjs/loader.js:1072:14)
+2021-10-31T11:02:56:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)
+2021-10-31T11:02:56:     at Module.load (internal/modules/cjs/loader.js:937:32)
+2021-10-31T11:02:56:     at Function.Module._load (internal/modules/cjs/loader.js:778:12)
+2021-10-31T11:02:56:     at Module.require (internal/modules/cjs/loader.js:961:19)
+2021-10-31T11:02:56:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39) {
+2021-10-31T11:02:56:   code: 'MODULE_NOT_FOUND',
+2021-10-31T11:02:56:   requireStack: [
+2021-10-31T11:02:56:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\service\\user.service.js',
+2021-10-31T11:02:56:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\controller\\user.controller.js',
+2021-10-31T11:02:56:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\routes\\user.route.js',
+2021-10-31T11:02:56:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\routes\\index.js',
+2021-10-31T11:02:56:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\app.js'
+2021-10-31T11:02:56:   ]
+2021-10-31T11:02:56: }
+2021-10-31T11:02:56: Error: Cannot find module 'bcrypt'
+2021-10-31T11:02:56: Require stack:
+2021-10-31T11:02:56: - C:\Users\84929\app-chat-api\app-chat\dist\service\user.service.js
+2021-10-31T11:02:56: - C:\Users\84929\app-chat-api\app-chat\dist\controller\user.controller.js
+2021-10-31T11:02:56: - C:\Users\84929\app-chat-api\app-chat\dist\routes\user.route.js
+2021-10-31T11:02:56: - C:\Users\84929\app-chat-api\app-chat\dist\routes\index.js
+2021-10-31T11:02:56: - C:\Users\84929\app-chat-api\app-chat\dist\app.js
+2021-10-31T11:02:56:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:889:15)
+2021-10-31T11:02:56:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:61:29)
+2021-10-31T11:02:56:     at require (internal/modules/cjs/helpers.js:92:18)
+2021-10-31T11:02:56:     at Object.<anonymous> (C:\Users\84929\app-chat-api\app-chat\dist\service\user.service.js:12:16)
+2021-10-31T11:02:56:     at Module._compile (internal/modules/cjs/loader.js:1072:14)
+2021-10-31T11:02:56:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)
+2021-10-31T11:02:56:     at Module.load (internal/modules/cjs/loader.js:937:32)
+2021-10-31T11:02:56:     at Function.Module._load (internal/modules/cjs/loader.js:778:12)
+2021-10-31T11:02:56:     at Module.require (internal/modules/cjs/loader.js:961:19)
+2021-10-31T11:02:56:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39) {
+2021-10-31T11:02:56:   code: 'MODULE_NOT_FOUND',
+2021-10-31T11:02:56:   requireStack: [
+2021-10-31T11:02:56:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\service\\user.service.js',
+2021-10-31T11:02:56:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\controller\\user.controller.js',
+2021-10-31T11:02:56:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\routes\\user.route.js',
+2021-10-31T11:02:56:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\routes\\index.js',
+2021-10-31T11:02:56:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\app.js'
+2021-10-31T11:02:56:   ]
+2021-10-31T11:02:56: }
+2021-10-31T11:02:57: Error: Cannot find module 'bcrypt'
+2021-10-31T11:02:57: Require stack:
+2021-10-31T11:02:57: - C:\Users\84929\app-chat-api\app-chat\dist\service\user.service.js
+2021-10-31T11:02:57: - C:\Users\84929\app-chat-api\app-chat\dist\controller\user.controller.js
+2021-10-31T11:02:57: - C:\Users\84929\app-chat-api\app-chat\dist\routes\user.route.js
+2021-10-31T11:02:57: - C:\Users\84929\app-chat-api\app-chat\dist\routes\index.js
+2021-10-31T11:02:57: - C:\Users\84929\app-chat-api\app-chat\dist\app.js
+2021-10-31T11:02:57:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:889:15)
+2021-10-31T11:02:57:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:61:29)
+2021-10-31T11:02:57:     at require (internal/modules/cjs/helpers.js:92:18)
+2021-10-31T11:02:57:     at Object.<anonymous> (C:\Users\84929\app-chat-api\app-chat\dist\service\user.service.js:12:16)
+2021-10-31T11:02:57:     at Module._compile (internal/modules/cjs/loader.js:1072:14)
+2021-10-31T11:02:57:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)
+2021-10-31T11:02:57:     at Module.load (internal/modules/cjs/loader.js:937:32)
+2021-10-31T11:02:57:     at Function.Module._load (internal/modules/cjs/loader.js:778:12)
+2021-10-31T11:02:57:     at Module.require (internal/modules/cjs/loader.js:961:19)
+2021-10-31T11:02:57:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39) {
+2021-10-31T11:02:57:   code: 'MODULE_NOT_FOUND',
+2021-10-31T11:02:57:   requireStack: [
+2021-10-31T11:02:57:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\service\\user.service.js',
+2021-10-31T11:02:57:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\controller\\user.controller.js',
+2021-10-31T11:02:57:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\routes\\user.route.js',
+2021-10-31T11:02:57:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\routes\\index.js',
+2021-10-31T11:02:57:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\app.js'
+2021-10-31T11:02:57:   ]
+2021-10-31T11:02:57: }
+2021-10-31T11:02:58: Error: Cannot find module 'bcrypt'
+2021-10-31T11:02:58: Require stack:
+2021-10-31T11:02:58: - C:\Users\84929\app-chat-api\app-chat\dist\service\user.service.js
+2021-10-31T11:02:58: - C:\Users\84929\app-chat-api\app-chat\dist\controller\user.controller.js
+2021-10-31T11:02:58: - C:\Users\84929\app-chat-api\app-chat\dist\routes\user.route.js
+2021-10-31T11:02:58: - C:\Users\84929\app-chat-api\app-chat\dist\routes\index.js
+2021-10-31T11:02:58: - C:\Users\84929\app-chat-api\app-chat\dist\app.js
+2021-10-31T11:02:58:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:889:15)
+2021-10-31T11:02:58:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:61:29)
+2021-10-31T11:02:58:     at require (internal/modules/cjs/helpers.js:92:18)
+2021-10-31T11:02:58:     at Object.<anonymous> (C:\Users\84929\app-chat-api\app-chat\dist\service\user.service.js:12:16)
+2021-10-31T11:02:58:     at Module._compile (internal/modules/cjs/loader.js:1072:14)
+2021-10-31T11:02:58:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)
+2021-10-31T11:02:58:     at Module.load (internal/modules/cjs/loader.js:937:32)
+2021-10-31T11:02:58:     at Function.Module._load (internal/modules/cjs/loader.js:778:12)
+2021-10-31T11:02:58:     at Module.require (internal/modules/cjs/loader.js:961:19)
+2021-10-31T11:02:58:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39) {
+2021-10-31T11:02:58:   code: 'MODULE_NOT_FOUND',
+2021-10-31T11:02:58:   requireStack: [
+2021-10-31T11:02:58:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\service\\user.service.js',
+2021-10-31T11:02:58:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\controller\\user.controller.js',
+2021-10-31T11:02:58:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\routes\\user.route.js',
+2021-10-31T11:02:58:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\routes\\index.js',
+2021-10-31T11:02:58:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\app.js'
+2021-10-31T11:02:58:   ]
+2021-10-31T11:02:58: }
+2021-10-31T11:02:58: Error: Cannot find module 'bcrypt'
+2021-10-31T11:02:58: Require stack:
+2021-10-31T11:02:58: - C:\Users\84929\app-chat-api\app-chat\dist\service\user.service.js
+2021-10-31T11:02:58: - C:\Users\84929\app-chat-api\app-chat\dist\controller\user.controller.js
+2021-10-31T11:02:58: - C:\Users\84929\app-chat-api\app-chat\dist\routes\user.route.js
+2021-10-31T11:02:58: - C:\Users\84929\app-chat-api\app-chat\dist\routes\index.js
+2021-10-31T11:02:58: - C:\Users\84929\app-chat-api\app-chat\dist\app.js
+2021-10-31T11:02:58:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:889:15)
+2021-10-31T11:02:58:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:61:29)
+2021-10-31T11:02:58:     at require (internal/modules/cjs/helpers.js:92:18)
+2021-10-31T11:02:58:     at Object.<anonymous> (C:\Users\84929\app-chat-api\app-chat\dist\service\user.service.js:12:16)
+2021-10-31T11:02:58:     at Module._compile (internal/modules/cjs/loader.js:1072:14)
+2021-10-31T11:02:58:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)
+2021-10-31T11:02:58:     at Module.load (internal/modules/cjs/loader.js:937:32)
+2021-10-31T11:02:58:     at Function.Module._load (internal/modules/cjs/loader.js:778:12)
+2021-10-31T11:02:58:     at Module.require (internal/modules/cjs/loader.js:961:19)
+2021-10-31T11:02:58:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39) {
+2021-10-31T11:02:58:   code: 'MODULE_NOT_FOUND',
+2021-10-31T11:02:58:   requireStack: [
+2021-10-31T11:02:58:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\service\\user.service.js',
+2021-10-31T11:02:58:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\controller\\user.controller.js',
+2021-10-31T11:02:58:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\routes\\user.route.js',
+2021-10-31T11:02:58:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\routes\\index.js',
+2021-10-31T11:02:58:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\app.js'
+2021-10-31T11:02:58:   ]
+2021-10-31T11:02:58: }
+2021-10-31T11:02:59: Error: Cannot find module 'bcrypt'
+2021-10-31T11:02:59: Require stack:
+2021-10-31T11:02:59: - C:\Users\84929\app-chat-api\app-chat\dist\service\user.service.js
+2021-10-31T11:02:59: - C:\Users\84929\app-chat-api\app-chat\dist\controller\user.controller.js
+2021-10-31T11:02:59: - C:\Users\84929\app-chat-api\app-chat\dist\routes\user.route.js
+2021-10-31T11:02:59: - C:\Users\84929\app-chat-api\app-chat\dist\routes\index.js
+2021-10-31T11:02:59: - C:\Users\84929\app-chat-api\app-chat\dist\app.js
+2021-10-31T11:02:59:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:889:15)
+2021-10-31T11:02:59:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:61:29)
+2021-10-31T11:02:59:     at require (internal/modules/cjs/helpers.js:92:18)
+2021-10-31T11:02:59:     at Object.<anonymous> (C:\Users\84929\app-chat-api\app-chat\dist\service\user.service.js:12:16)
+2021-10-31T11:02:59:     at Module._compile (internal/modules/cjs/loader.js:1072:14)
+2021-10-31T11:02:59:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)
+2021-10-31T11:02:59:     at Module.load (internal/modules/cjs/loader.js:937:32)
+2021-10-31T11:02:59:     at Function.Module._load (internal/modules/cjs/loader.js:778:12)
+2021-10-31T11:02:59:     at Module.require (internal/modules/cjs/loader.js:961:19)
+2021-10-31T11:02:59:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39) {
+2021-10-31T11:02:59:   code: 'MODULE_NOT_FOUND',
+2021-10-31T11:02:59:   requireStack: [
+2021-10-31T11:02:59:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\service\\user.service.js',
+2021-10-31T11:02:59:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\controller\\user.controller.js',
+2021-10-31T11:02:59:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\routes\\user.route.js',
+2021-10-31T11:02:59:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\routes\\index.js',
+2021-10-31T11:02:59:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\app.js'
+2021-10-31T11:02:59:   ]
+2021-10-31T11:02:59: }
+2021-10-31T11:02:59: Error: Cannot find module 'bcrypt'
+2021-10-31T11:02:59: Require stack:
+2021-10-31T11:02:59: - C:\Users\84929\app-chat-api\app-chat\dist\service\user.service.js
+2021-10-31T11:02:59: - C:\Users\84929\app-chat-api\app-chat\dist\controller\user.controller.js
+2021-10-31T11:02:59: - C:\Users\84929\app-chat-api\app-chat\dist\routes\user.route.js
+2021-10-31T11:02:59: - C:\Users\84929\app-chat-api\app-chat\dist\routes\index.js
+2021-10-31T11:02:59: - C:\Users\84929\app-chat-api\app-chat\dist\app.js
+2021-10-31T11:02:59:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:889:15)
+2021-10-31T11:02:59:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:61:29)
+2021-10-31T11:02:59:     at require (internal/modules/cjs/helpers.js:92:18)
+2021-10-31T11:02:59:     at Object.<anonymous> (C:\Users\84929\app-chat-api\app-chat\dist\service\user.service.js:12:16)
+2021-10-31T11:02:59:     at Module._compile (internal/modules/cjs/loader.js:1072:14)
+2021-10-31T11:02:59:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)
+2021-10-31T11:02:59:     at Module.load (internal/modules/cjs/loader.js:937:32)
+2021-10-31T11:02:59:     at Function.Module._load (internal/modules/cjs/loader.js:778:12)
+2021-10-31T11:02:59:     at Module.require (internal/modules/cjs/loader.js:961:19)
+2021-10-31T11:02:59:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39) {
+2021-10-31T11:02:59:   code: 'MODULE_NOT_FOUND',
+2021-10-31T11:02:59:   requireStack: [
+2021-10-31T11:02:59:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\service\\user.service.js',
+2021-10-31T11:02:59:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\controller\\user.controller.js',
+2021-10-31T11:02:59:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\routes\\user.route.js',
+2021-10-31T11:02:59:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\routes\\index.js',
+2021-10-31T11:02:59:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\app.js'
+2021-10-31T11:02:59:   ]
+2021-10-31T11:02:59: }
+2021-10-31T11:03:00: Error: Cannot find module 'bcrypt'
+2021-10-31T11:03:00: Require stack:
+2021-10-31T11:03:00: - C:\Users\84929\app-chat-api\app-chat\dist\service\user.service.js
+2021-10-31T11:03:00: - C:\Users\84929\app-chat-api\app-chat\dist\controller\user.controller.js
+2021-10-31T11:03:00: - C:\Users\84929\app-chat-api\app-chat\dist\routes\user.route.js
+2021-10-31T11:03:00: - C:\Users\84929\app-chat-api\app-chat\dist\routes\index.js
+2021-10-31T11:03:00: - C:\Users\84929\app-chat-api\app-chat\dist\app.js
+2021-10-31T11:03:00:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:889:15)
+2021-10-31T11:03:00:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:61:29)
+2021-10-31T11:03:00:     at require (internal/modules/cjs/helpers.js:92:18)
+2021-10-31T11:03:00:     at Object.<anonymous> (C:\Users\84929\app-chat-api\app-chat\dist\service\user.service.js:12:16)
+2021-10-31T11:03:00:     at Module._compile (internal/modules/cjs/loader.js:1072:14)
+2021-10-31T11:03:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)
+2021-10-31T11:03:00:     at Module.load (internal/modules/cjs/loader.js:937:32)
+2021-10-31T11:03:00:     at Function.Module._load (internal/modules/cjs/loader.js:778:12)
+2021-10-31T11:03:00:     at Module.require (internal/modules/cjs/loader.js:961:19)
+2021-10-31T11:03:00:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39) {
+2021-10-31T11:03:00:   code: 'MODULE_NOT_FOUND',
+2021-10-31T11:03:00:   requireStack: [
+2021-10-31T11:03:00:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\service\\user.service.js',
+2021-10-31T11:03:00:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\controller\\user.controller.js',
+2021-10-31T11:03:00:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\routes\\user.route.js',
+2021-10-31T11:03:00:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\routes\\index.js',
+2021-10-31T11:03:00:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\app.js'
+2021-10-31T11:03:00:   ]
+2021-10-31T11:03:00: }
+2021-10-31T11:03:00: Error: Cannot find module 'bcrypt'
+2021-10-31T11:03:00: Require stack:
+2021-10-31T11:03:00: - C:\Users\84929\app-chat-api\app-chat\dist\service\user.service.js
+2021-10-31T11:03:00: - C:\Users\84929\app-chat-api\app-chat\dist\controller\user.controller.js
+2021-10-31T11:03:00: - C:\Users\84929\app-chat-api\app-chat\dist\routes\user.route.js
+2021-10-31T11:03:00: - C:\Users\84929\app-chat-api\app-chat\dist\routes\index.js
+2021-10-31T11:03:00: - C:\Users\84929\app-chat-api\app-chat\dist\app.js
+2021-10-31T11:03:00:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:889:15)
+2021-10-31T11:03:00:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:61:29)
+2021-10-31T11:03:00:     at require (internal/modules/cjs/helpers.js:92:18)
+2021-10-31T11:03:00:     at Object.<anonymous> (C:\Users\84929\app-chat-api\app-chat\dist\service\user.service.js:12:16)
+2021-10-31T11:03:00:     at Module._compile (internal/modules/cjs/loader.js:1072:14)
+2021-10-31T11:03:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)
+2021-10-31T11:03:00:     at Module.load (internal/modules/cjs/loader.js:937:32)
+2021-10-31T11:03:00:     at Function.Module._load (internal/modules/cjs/loader.js:778:12)
+2021-10-31T11:03:00:     at Module.require (internal/modules/cjs/loader.js:961:19)
+2021-10-31T11:03:00:     at Module.Hook._require.Module.require (C:\Users\84929\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39) {
+2021-10-31T11:03:00:   code: 'MODULE_NOT_FOUND',
+2021-10-31T11:03:00:   requireStack: [
+2021-10-31T11:03:00:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\service\\user.service.js',
+2021-10-31T11:03:00:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\controller\\user.controller.js',
+2021-10-31T11:03:00:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\routes\\user.route.js',
+2021-10-31T11:03:00:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\routes\\index.js',
+2021-10-31T11:03:00:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\app.js'
+2021-10-31T11:03:00:   ]
+2021-10-31T11:03:00: }
