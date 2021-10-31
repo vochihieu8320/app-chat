@@ -12,7 +12,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const express_1 = __importDefault(require("express"));
+const express = require('express');
 const db_1 = __importDefault(require("./db/db"));
 const index_1 = __importDefault(require("./routes/index"));
 const http_1 = require("http");
@@ -20,12 +20,12 @@ const socket_io_1 = require("socket.io");
 const conversation_conller_1 = __importDefault(require("./controller/conversation.conller"));
 const user_online_controller_1 = __importDefault(require("./controller/user-online.controller"));
 const cors = require("cors");
-const app = (0, express_1.default)();
+const app = express();
 app.use(cors({
     origin: ["http://localhost:4200", "http://localhost:3001"]
 }));
-app.use(express_1.default.json());
-app.use(express_1.default.urlencoded({ extended: false }));
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
 const port = process.env.port;
 const httpServer = (0, http_1.createServer)(app);
 const io = new socket_io_1.Server(httpServer, {

@@ -5,9 +5,9 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const express = require('express');
 const uploadfile_controller_1 = __importDefault(require("../controller/uploadfile.controller"));
-const multer_1 = __importDefault(require("multer"));
+const multer = require('multer');
 const uploadfile_controller_2 = __importDefault(require("../controller/uploadfile.controller"));
-const upload = (0, multer_1.default)({ dest: 'uploads/' });
+const upload = multer({ dest: 'uploads/' });
 const router = express.Router();
 router.post('', upload.single('file'), uploadfile_controller_1.default.upload);
 router.get('/:key', uploadfile_controller_2.default.getFile);
