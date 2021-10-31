@@ -1770,3 +1770,5 @@
 2021-10-31T11:03:00:     'C:\\Users\\84929\\app-chat-api\\app-chat\\dist\\app.js'
 2021-10-31T11:03:00:   ]
 2021-10-31T11:03:00: }
+2021-10-31T11:05:40: Server listen at port 3000}
+2021-10-31T11:05:42: connect to mongoDB
