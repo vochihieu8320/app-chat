@@ -118,7 +118,7 @@ class ChanelController {
                 const find_channel = yield chanel_model_1.default.findById(channelID);
                 if (find_channel.owner === userID) {
                     yield chanel_model_1.default.findByIdAndDelete(channelID);
-                    yield chanel_user_model_1.default.deleteOne({ userID: userID, channelID: channelID });
+                    yield chanel_user_model_1.default.deleteMany({ channelID: channelID });
                     res.json({ status: 200 });
                 }
                 else {

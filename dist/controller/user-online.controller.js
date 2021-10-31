@@ -13,6 +13,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const user_online_model_1 = __importDefault(require("../model/user-online.model"));
+const chanel_user_model_1 = __importDefault(require("../model/chanel-user.model"));
 class userOnline {
     Create(userID, name, channelID, SocketID) {
         return __awaiter(this, void 0, void 0, function* () {
@@ -35,7 +36,7 @@ class userOnline {
     getUserOnline(channelID) {
         return __awaiter(this, void 0, void 0, function* () {
             try {
-                const userOnline = yield user_online_model_1.default.aggregate([
+                const userOnline = yield chanel_user_model_1.default.aggregate([
                     {
                         $match: { channelID: channelID }
                     },
@@ -47,7 +48,7 @@ class userOnline {
                             from: "users",
                             localField: "userIdconvert",
                             foreignField: "_id",
-                            as: "userinfo"
+                            as: "userInfo"
                         }
                     }
                 ]);
@@ -63,7 +64,7 @@ class userOnline {
                 // const userOnline = await user_oline.find({channelID : channelID});
                 // return userOnline;
                 const channelID = req.params.channelID;
-                const userOnline = yield user_online_model_1.default.aggregate([
+                const userOnline = yield chanel_user_model_1.default.aggregate([
                     {
                         $match: { channelID: channelID }
                     },

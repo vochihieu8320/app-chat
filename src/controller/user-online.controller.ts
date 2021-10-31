@@ -1,6 +1,6 @@
 
 import user_oline from '../model/user-online.model';
-
+import channel_user from '../model/chanel-user.model';
 
 
 class userOnline{
@@ -26,7 +26,7 @@ class userOnline{
     async getUserOnline( channelID: string)
     {
         try {
-            const userOnline = await user_oline.aggregate([
+            const userOnline = await channel_user.aggregate([
                 {
                     $match: {channelID: channelID}
 
@@ -41,7 +41,7 @@ class userOnline{
                             from: "users",
                             localField:"userIdconvert",
                             foreignField: "_id",
-                            as: "userinfo"
+                            as: "userInfo"
                         }
                 }
                
@@ -59,7 +59,7 @@ class userOnline{
 
             // return userOnline;
             const channelID = req.params.channelID;
-            const userOnline = await user_oline.aggregate([
+            const userOnline = await channel_user.aggregate([
                 {
                     $match: {channelID: channelID}
 

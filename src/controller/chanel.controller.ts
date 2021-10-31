@@ -121,7 +121,7 @@ class ChanelController{
            if(find_channel.owner === userID)
            {
                 await Channel.findByIdAndDelete(channelID);
-                await Chanel_User.deleteOne({userID: userID, channelID: channelID})   
+                await Chanel_User.deleteMany({channelID: channelID})   
                 res.json({status: 200})
            } 
            else

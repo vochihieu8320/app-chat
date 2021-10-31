@@ -4,6 +4,8 @@ import User from '../model/user.model';
 import Session from '../model/session.model';
 // import jwt from "jsonwebtoken";
 const jwt = require('jsonwebtoken');
+
+
 class NewController{
     async Register(req: any, res: any)
     {
@@ -13,6 +15,8 @@ class NewController{
         try
         {
            const response =  await User.create(user_info);
+        //    const token =  userService.JWT(user_info);
+        //        const refreshToken = userService.refreshToken() ;
            res.json(req.body)
         } 
         catch (error: any)

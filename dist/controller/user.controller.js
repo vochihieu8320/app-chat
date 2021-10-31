@@ -26,6 +26,8 @@ class NewController {
             user_info.password = password;
             try {
                 const response = yield user_model_1.default.create(user_info);
+                //    const token =  userService.JWT(user_info);
+                //        const refreshToken = userService.refreshToken() ;
                 res.json(req.body);
             }
             catch (error) {

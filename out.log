@@ -1166,3 +1166,44 @@
 2021-10-31T10:37:31: connect to mongoDB
 2021-10-31T11:05:40: Server listen at port 3000}
 2021-10-31T11:05:42: connect to mongoDB
+2021-10-31T11:39:58: Server listen at port 3000}
+2021-10-31T11:39:58: connect to mongoDB
+2021-10-31T12:26:42: Server listen at port 3000}
+2021-10-31T12:26:42: connect to mongoDB
+2021-10-31T13:05:24: Server listen at port 3000}
+2021-10-31T13:05:24: connect to mongoDB
+2021-10-31T13:41:25: Server listen at port 3000}
+2021-10-31T13:41:25: connect to mongoDB
+2021-10-31T13:42:41: error Error: User validation failed: name: Path `name` (`vochihieumoitaohomnay4`) is longer than the maximum allowed length (20).
+2021-10-31T13:42:41:     at ValidationError.inspect (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\error\validation.js:48:26)
+2021-10-31T13:42:41:     at formatValue (internal/util/inspect.js:743:19)
+2021-10-31T13:42:41:     at inspect (internal/util/inspect.js:317:10)
+2021-10-31T13:42:41:     at formatWithOptionsInternal (internal/util/inspect.js:1976:40)
+2021-10-31T13:42:41:     at formatWithOptions (internal/util/inspect.js:1858:10)
+2021-10-31T13:42:41:     at console.value (internal/console/constructor.js:323:14)
+2021-10-31T13:42:41:     at console.log (internal/console/constructor.js:358:61)
+2021-10-31T13:42:41:     at C:\Users\84929\app-chat-api\app-chat\dist\controller\user.controller.js:32:25
+2021-10-31T13:42:41:     at Generator.throw (<anonymous>)
+2021-10-31T13:42:41:     at rejected (C:\Users\84929\app-chat-api\app-chat\dist\controller\user.controller.js:6:65) {
+2021-10-31T13:42:41:   errors: {
+2021-10-31T13:42:41:     name: ValidatorError: Path `name` (`vochihieumoitaohomnay4`) is longer than the maximum allowed length (20).
+2021-10-31T13:42:41:         at validate (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\schematype.js:1264:13)
+2021-10-31T13:42:41:         at C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\schematype.js:1247:7
+2021-10-31T13:42:41:         at Array.forEach (<anonymous>)
+2021-10-31T13:42:41:         at SchemaString.SchemaType.doValidate (C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\schematype.js:1197:14)
+2021-10-31T13:42:41:         at C:\Users\84929\app-chat-api\app-chat\node_modules\mongoose\lib\document.js:2662:18
+2021-10-31T13:42:41:         at processTicksAndRejections (internal/process/task_queues.js:77:11) {
+2021-10-31T13:42:41:       properties: [Object],
+2021-10-31T13:42:41:       kind: 'maxlength',
+2021-10-31T13:42:41:       path: 'name',
+2021-10-31T13:42:41:       value: 'vochihieumoitaohomnay4',
+2021-10-31T13:42:41:       reason: undefined,
+2021-10-31T13:42:41:       [Symbol(mongoose:validatorError)]: true
+2021-10-31T13:42:41:     }
+2021-10-31T13:42:41:   },
+2021-10-31T13:42:41:   _message: 'User validation failed'
+2021-10-31T13:42:41: }
+2021-10-31T13:43:44: Server listen at port 3000}
+2021-10-31T13:43:44: connect to mongoDB
+2021-10-31T14:11:56: Server listen at port 3000}
+2021-10-31T14:11:56: connect to mongoDB
