@@ -128,6 +128,7 @@ socket.on("disconnect", async() => {
 
 
 
-httpServer.listen(port, ()=>{console.log(`thay doi o testbranch`)})
+httpServer.listen(port, ()=>{console.log(`Server listen in ${port}`)})
+
 
 route(app)
