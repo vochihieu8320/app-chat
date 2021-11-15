@@ -128,6 +128,6 @@ socket.on("disconnect", async() => {
 
 
 
-httpServer.listen(port, ()=>{console.log(`thay doi o testngu`)})
+httpServer.listen(port, ()=>{console.log(`thay doi o master`)})
 
 route(app)
