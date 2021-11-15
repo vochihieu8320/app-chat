@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "preinstall": "npm install pm2 -g",
-    "start": "tsc & pm2-runtime start ecosystem.config.js --env production",
-    "start:test": "tsc & pm2 start ecosystem.config.js --env development",
+    "start:prod": "tsc & pm2-runtime start ecosystem.config.js --env production",
+    "start:dev": "tsc & pm2 start ecosystem.config.js --env development",
     "build": "tsc -p ."
   },
   "keywords": [],

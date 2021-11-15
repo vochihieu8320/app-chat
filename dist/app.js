@@ -22,7 +22,7 @@ const user_online_controller_1 = __importDefault(require("./controller/user-onli
 const cors = require("cors");
 const app = express();
 app.use(cors({
-    origin: ["http://localhost:4200", "http://localhost:3001", "https://app-chat-vch.herokuapp.com/"]
+    origin: ["http://localhost:4200", "http://localhost:3001", "https://app-chat-vch.herokuapp.com"]
 }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -30,7 +30,7 @@ const port = process.env.PORT || 3000;
 const httpServer = (0, http_1.createServer)(app);
 const io = new socket_io_1.Server(httpServer, {
     cors: {
-        origin: ["http://localhost:4200", "http://localhost:3001", "https://app-chat-vch.herokuapp.com/"],
+        origin: ["http://localhost:4200", "http://localhost:3001", "https://app-chat-vch.herokuapp.com"],
     }
 });
 (0, db_1.default)();

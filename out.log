@@ -1209,3 +1209,21 @@
 2021-10-31T14:11:56: connect to mongoDB
 2021-10-31T14:15:02: Server listen at port 3000}
 2021-10-31T14:15:02: connect to mongoDB
+2021-11-04T11:46:23: Server listen at port 3000}
+2021-11-04T11:46:23: connect to mongoDB
+2021-11-04T11:48:15: error MongoServerError: E11000 duplicate key error collection: AppChat.users index: name_1 dup key: { name: "vochihieu2ll2222" }
+2021-11-04T11:48:15:     at C:\Users\84929\app-chat-api\app-chat\node_modules\mongodb\lib\operations\insert.js:51:33
+2021-11-04T11:48:15:     at C:\Users\84929\app-chat-api\app-chat\node_modules\mongodb\lib\cmap\connection_pool.js:272:25
+2021-11-04T11:48:15:     at handleOperationResult (C:\Users\84929\app-chat-api\app-chat\node_modules\mongodb\lib\sdam\server.js:363:9)
+2021-11-04T11:48:15:     at MessageStream.messageHandler (C:\Users\84929\app-chat-api\app-chat\node_modules\mongodb\lib\cmap\connection.js:479:9)
+2021-11-04T11:48:15:     at MessageStream.emit (events.js:400:28)
+2021-11-04T11:48:15:     at MessageStream.emit (domain.js:470:12)
+2021-11-04T11:48:15:     at processIncomingData (C:\Users\84929\app-chat-api\app-chat\node_modules\mongodb\lib\cmap\message_stream.js:108:16)
+2021-11-04T11:48:15:     at MessageStream._write (C:\Users\84929\app-chat-api\app-chat\node_modules\mongodb\lib\cmap\message_stream.js:28:9)
+2021-11-04T11:48:15:     at writeOrBuffer (internal/streams/writable.js:358:12)
+2021-11-04T11:48:15:     at MessageStream.Writable.write (internal/streams/writable.js:303:10) {
+2021-11-04T11:48:15:   index: 0,
+2021-11-04T11:48:15:   code: 11000,
+2021-11-04T11:48:15:   keyPattern: { name: 1 },
+2021-11-04T11:48:15:   keyValue: { name: 'vochihieu2ll2222' }
+2021-11-04T11:48:15: }

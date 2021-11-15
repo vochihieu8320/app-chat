@@ -3,6 +3,7 @@ module.exports = {
     name: "VCH",
     script: "dist/app.js",
     env: {
+      PORT: 3000,
       NODE_ENV: "development",
       db : "mongodb://localhost:27017/AppChat",
       JWT_TOKEN_SECRET: "vch@11111111iiiiiiiii",
@@ -12,6 +13,7 @@ module.exports = {
       AWS_REGION: "us-east-2",
     },
     env_production: {
+      PORT: 3000,
       NODE_ENV: "production",
       JWT_TOKEN_SECRET: "vch@11111111iiiiiiiii",
       AWS_BUCKET_NAME : "appchatbucket",
